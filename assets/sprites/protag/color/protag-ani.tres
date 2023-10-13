@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://bw4qv3rd2h4le"]
+
+[ext_resource type="Texture2D" uid="uid://b1bpvyv380h2c" path="res://assets/sprites/protag/protag-outline-neutral-color.png" id="1_5f0qe"]
+[ext_resource type="Texture2D" uid="uid://ccv253ma2352e" path="res://assets/sprites/protag/protag-outline-neutral-color-2.png" id="2_t2hgn"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5f0qe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_t2hgn")
+}],
+"loop": true,
+"name": &"neutral",
+"speed": 2.0
+}]
