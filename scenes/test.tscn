@@ -1,10 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://dkpvywtxiqlka"]
+[gd_scene load_steps=12 format=3 uid="uid://dkpvywtxiqlka"]
 
+[ext_resource type="Script" path="res://assets/scripts/player/playerMovement.gd" id="1_0hfq1"]
 [ext_resource type="Texture2D" uid="uid://b2q77i64e7k5s" path="res://assets/sprites/protag/protag-outline-neutral.png" id="1_fdi6q"]
 [ext_resource type="Texture2D" uid="uid://bkobcb7njjasw" path="res://assets/sprites/protag/run/protag-outline-run-1.png" id="2_ld4re"]
 [ext_resource type="Texture2D" uid="uid://beo872mt2js7a" path="res://assets/sprites/protag/protag-outline-neutral2.png" id="2_rtbk5"]
 [ext_resource type="Texture2D" uid="uid://c3tehk3fekxch" path="res://assets/sprites/protag/run/protag-outline-run-3.png" id="3_wssco"]
 [ext_resource type="Texture2D" uid="uid://c3qlsflhnmd7i" path="res://assets/sprites/protag/run/protag-outline-run-2.png" id="4_kf7h2"]
+[ext_resource type="Texture2D" uid="uid://dxfed15uyewlu" path="res://assets/sprites/placeholder-floor.png" id="6_tohtm"]
+[ext_resource type="Script" path="res://assets/scripts/player/playerAnimation.gd" id="7_egh58"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2ye3r"]
 animations = [{
@@ -37,14 +40,37 @@ animations = [{
 "speed": 7.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ywt8t"]
+size = Vector2(15.1316, 29.6053)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dgns8"]
+size = Vector2(20, 21.1494)
+
 [node name="root" type="Node2D"]
 
-[node name="player" type="Node2D" parent="."]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_0hfq1")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 sprite_frames = SubResource("SpriteFrames_2ye3r")
 animation = &"neutral"
-frame_progress = 0.979163
-centered = false
+frame_progress = 0.702821
+script = ExtResource("7_egh58")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(4.5, -0.499999)
+scale = Vector2(1.52, 1.52)
+shape = SubResource("RectangleShape2D_ywt8t")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(0, 70)
+scale = Vector2(9.77, 2.175)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("RectangleShape2D_dgns8")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+scale = Vector2(0.67, 1.3)
+texture = ExtResource("6_tohtm")
