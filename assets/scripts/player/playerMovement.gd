@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+@onready var _animated_sprite = $AnimatedSprite2D
 
 @export var SPEED = 150.0
 @export var JUMP_VELOCITY = -400.0
@@ -26,3 +27,13 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+func _process(_delta):
+	if Input.is_action_pressed("right") and not Input.is_action_pressed("left"):
+		_animated_sprite.flip_h = false
+		_animated_sprite.play("run")
+	elif Input.is_action_pressed("left") and not Input.is_action_pressed("right"):
+		_animated_sprite.flip_h = true
+		_animated_sprite.play("run")
+	else:
+		_animated_sprite.play("neutral")

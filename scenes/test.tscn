@@ -7,7 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://c3tehk3fekxch" path="res://assets/sprites/protag/run/protag-outline-run-3.png" id="3_wssco"]
 [ext_resource type="Texture2D" uid="uid://c3qlsflhnmd7i" path="res://assets/sprites/protag/run/protag-outline-run-2.png" id="4_kf7h2"]
 [ext_resource type="Texture2D" uid="uid://dxfed15uyewlu" path="res://assets/sprites/placeholder-floor.png" id="6_tohtm"]
-[ext_resource type="Script" path="res://assets/scripts/player/playerAnimation.gd" id="7_egh58"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2ye3r"]
 animations = [{
@@ -40,6 +39,20 @@ animations = [{
 "speed": 7.0
 }]
 
+[sub_resource type="GDScript" id="GDScript_qy8ea"]
+script/source = "extends AnimatedSprite2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ywt8t"]
 size = Vector2(15.1316, 29.6053)
 
@@ -54,8 +67,8 @@ script = ExtResource("1_0hfq1")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 sprite_frames = SubResource("SpriteFrames_2ye3r")
 animation = &"neutral"
-frame_progress = 0.906347
-script = ExtResource("7_egh58")
+frame_progress = 0.988582
+script = SubResource("GDScript_qy8ea")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(4.5, -0.499999)
