@@ -29,7 +29,13 @@ func _physics_process(delta):
 	move_and_slide()
 
 func _process(_delta):
-	if Input.is_action_pressed("right") and not Input.is_action_pressed("left"):
+	if not is_on_floor():
+		if Input.is_action_pressed("left") and not Input.is_action_pressed("right"):
+			_animated_sprite.flip_h = true
+		elif Input.is_action_pressed("right"):
+			_animated_sprite.flip_h = false
+		_animated_sprite.play("jump")
+	elif Input.is_action_pressed("right") and not Input.is_action_pressed("left"):
 		_animated_sprite.flip_h = false
 		_animated_sprite.play("run")
 	elif Input.is_action_pressed("left") and not Input.is_action_pressed("right"):
