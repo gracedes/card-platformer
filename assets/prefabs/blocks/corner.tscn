@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bx7r3asko0vwd"]
+
+[ext_resource type="Texture2D" uid="uid://dnwbemmskf07n" path="res://assets/sprites/blocks/corner.png" id="1_v5ow4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qe4lo"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+rotation = 1.5708
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_v5ow4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1.5, 1.5)
+shape = SubResource("RectangleShape2D_qe4lo")
