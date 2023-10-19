@@ -63,7 +63,7 @@ func _process(delta):
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ywt8t"]
-size = Vector2(15.1316, 29.6053)
+size = Vector2(13.8158, 28.9474)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dgns8"]
 size = Vector2(20, 21.1494)
@@ -75,11 +75,12 @@ script = ExtResource("1_0hfq1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 sprite_frames = SubResource("SpriteFrames_2ye3r")
-animation = &"jump"
+animation = &"neutral"
+frame_progress = 0.372604
 script = SubResource("GDScript_qy8ea")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(4.5, -0.499999)
+position = Vector2(4.5, 1.50204e-05)
 scale = Vector2(1.52, 1.52)
 shape = SubResource("RectangleShape2D_ywt8t")
 
