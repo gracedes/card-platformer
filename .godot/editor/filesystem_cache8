@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1698351535
+::res://::1698352340
 ::res://addons/::1698351213
 ::res://addons/discord-sdk-gd/::1698351213
 Debug.svg::CompressedTexture2D::1414570589633831756::1698351213::1698351213::1::::<><>::
@@ -14,7 +14,7 @@ discord-rpc-gd.gdextension::GDExtension::-1::1698351213::0::1::::<><>::
 ::res://addons/discord-sdk-gd/nodes/::1698351525
 core_updater.gd::GDScript::-1::1698351213::0::1::::core_updater<>Node<>::
 debug.gd::GDScript::-1::1698351213::0::1::::<>Node<>::
-Debug.tscn::PackedScene::6635590667203094151::1698351213::0::1::::<><>::uid://dnfq6kug4x6o2::::res://addons/discord-sdk-gd/nodes/assets/Checked.svg<>uid://compmm3kviqqe::::res://addons/discord-sdk-gd/nodes/assets/Unchecked.svg<>uid://dtc6ckladq0td::::res://addons/discord-sdk-gd/nodes/assets/circle.svg
+Debug.tscn::PackedScene::6635590667203094151::1698351213::0::1::::<><>::uid://dnfq6kug4x6o2
 ::res://addons/discord-sdk-gd/nodes/assets/::1698351213
 Checked.svg::CompressedTexture2D::8083066295081234619::1698351213::1698351213::1::::<><>::
 circle.svg::CompressedTexture2D::8498865176304625629::1698351213::1698351213::1::::<><>::

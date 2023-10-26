@@ -3,8 +3,6 @@
 export.cfg
 export_presets.cfg
 
-addons/discord-sdk-gd
-
 # Imported translations (automatically generated from CSV files)
 *.translation
 
