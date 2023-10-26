@@ -126,3 +126,11 @@ position = Vector2(62, 39)
 
 [node name="StaticBody2D11" parent="platform" instance=ExtResource("9_wgccn")]
 position = Vector2(92, 69)
+
+[node name="cards" type="Node2D" parent="."]
+
+[node name="card" type="Node2D" parent="cards"]
+
+[node name="outline" type="Sprite2D" parent="cards/card"]
+
+[node name="icon" type="Sprite2D" parent="cards/card"]
