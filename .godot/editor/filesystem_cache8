@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1698357511
+::res://::1698961333
 ::res://addons/::1698354855
 ::res://addons/discord-sdk-gd/::1698355064
 Debug.svg::CompressedTexture2D::1414570589633831756::1698355064::1698355064::1::::<><>::
@@ -29,7 +29,7 @@ crate.tscn::PackedScene::8415948396759753479::1697745490::0::1::::<><>::uid://c0
 inner-corner.tscn::PackedScene::1864046690938488663::1697745251::0::1::::<><>::uid://c5emqc3li6ckj
 pillar-end.tscn::PackedScene::6929756454500753455::1697745397::0::1::::<><>::uid://croyw3op1nqib
 pillar.tscn::PackedScene::9180091685599058769::1697745433::0::1::::<><>::uid://v0hm7j576gjt
-spikes.tscn::PackedScene::4457322313384565289::1698357319::0::1::::<><>::uid://qqshbppk8cnu::::res://assets/sprites/blocks/spikes.png
+spikes.tscn::PackedScene::4457322313384565289::1698357319::0::1::::<><>::uid://qqshbppk8cnu
 wall.tscn::PackedScene::3475615891258577546::1697744838::0::1::::<><>::uid://bxn3qru8nvii3
 ::res://assets/scripts/::1697306197
 ::res://assets/scripts/player/::1698357369
@@ -44,8 +44,12 @@ pillar-end.png::CompressedTexture2D::5996450986079764025::1697744373::1697744433
 pillar.png::CompressedTexture2D::1526023304783893973::1697744387::1697744433::1::::<><>::
 spikes.png::CompressedTexture2D::1157157025092216094::1697744358::1697744433::1::::<><>::
 wall.png::CompressedTexture2D::4029330571981179364::1697744341::1697744433::1::::<><>::
-::res://assets/sprites/cards/::1697577123
-::res://assets/sprites/cards/icons/::1698357823
+::res://assets/sprites/cards/::1698961713
+card-0.png::CompressedTexture2D::3484920869000320891::1698961686::1698961723::1::::<><>::
+card-1.png::CompressedTexture2D::8482032657419805888::1698961694::1698961723::1::::<><>::
+card-2.png::CompressedTexture2D::8543881929489026743::1698961703::1698961723::1::::<><>::
+card-3.png::CompressedTexture2D::3293538921106312626::1698961713::1698961723::1::::<><>::
+::res://assets/sprites/cards/icons/::1698357828
 cloud-icon.png::CompressedTexture2D::6793211661530664062::1698357813::1698357828::1::::<><>::
 fire-icon.png::CompressedTexture2D::2792579249964845299::1698357823::1698357828::1::::<><>::
 plant-icon.png::CompressedTexture2D::415509218936735770::1698357804::1697724743::1::::<><>::
@@ -65,5 +69,5 @@ protag-outline-jump-up.png::CompressedTexture2D::4963228544600919140::1697301733
 protag-outline-run-1.png::CompressedTexture2D::3117274799770971378::1697300643::1697302415::1::::<><>::
 protag-outline-run-2.png::CompressedTexture2D::6771859344472280356::1697300970::1697302415::1::::<><>::
 protag-outline-run-3.png::CompressedTexture2D::6777608103827611991::1697300981::1697302415::1::::<><>::
-::res://scenes/::1698357565
-test.tscn::PackedScene::7893435255593671328::1698357565::0::1::::<><>::res://assets/scripts/player/playerMovement.gd<>uid://b2q77i64e7k5s::::res://assets/sprites/protag/protag-outline-neutral.png<>uid://bkobcb7njjasw::::res://assets/sprites/protag/run/protag-outline-run-1.png<>uid://beo872mt2js7a::::res://assets/sprites/protag/protag-outline-neutral2.png<>uid://ccyhwciapto6g::::res://assets/sprites/protag/jump/protag-outline-jump-up.png<>uid://c3tehk3fekxch::::res://assets/sprites/protag/run/protag-outline-run-3.png<>uid://c3qlsflhnmd7i::::res://assets/sprites/protag/run/protag-outline-run-2.png<>uid://bpru5ee2dc6ha::::res://assets/prefabs/blocks/wall.tscn<>uid://1s7tuval67dj::::res://assets/prefabs/blocks/inner-corner.tscn<>uid://bx7r3asko0vwd::::res://assets/prefabs/blocks/corner.tscn
+::res://scenes/::1698357831
+test.tscn::PackedScene::7893435255593671328::1698357831::0::1::::<><>::res://assets/scripts/player/playerMovement.gd<>uid://b2q77i64e7k5s::::res://assets/sprites/protag/protag-outline-neutral.png<>uid://bkobcb7njjasw::::res://assets/sprites/protag/run/protag-outline-run-1.png<>uid://beo872mt2js7a::::res://assets/sprites/protag/protag-outline-neutral2.png<>uid://ccyhwciapto6g::::res://assets/sprites/protag/jump/protag-outline-jump-up.png<>uid://c3tehk3fekxch::::res://assets/sprites/protag/run/protag-outline-run-3.png<>uid://c3qlsflhnmd7i::::res://assets/sprites/protag/run/protag-outline-run-2.png<>uid://bpru5ee2dc6ha::::res://assets/prefabs/blocks/wall.tscn<>uid://1s7tuval67dj::::res://assets/prefabs/blocks/inner-corner.tscn<>uid://bx7r3asko0vwd::::res://assets/prefabs/blocks/corner.tscn

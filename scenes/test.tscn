@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dkpvywtxiqlka"]
+[gd_scene load_steps=23 format=3 uid="uid://dkpvywtxiqlka"]
 
 [ext_resource type="Script" path="res://assets/scripts/player/playerMovement.gd" id="1_0hfq1"]
 [ext_resource type="Texture2D" uid="uid://b2q77i64e7k5s" path="res://assets/sprites/protag/protag-outline-neutral.png" id="1_fdi6q"]
@@ -10,6 +10,14 @@
 [ext_resource type="PackedScene" uid="uid://bpru5ee2dc6ha" path="res://assets/prefabs/blocks/wall.tscn" id="8_qdtig"]
 [ext_resource type="PackedScene" uid="uid://1s7tuval67dj" path="res://assets/prefabs/blocks/inner-corner.tscn" id="9_wgccn"]
 [ext_resource type="PackedScene" uid="uid://bx7r3asko0vwd" path="res://assets/prefabs/blocks/corner.tscn" id="10_8b5ny"]
+[ext_resource type="Texture2D" uid="uid://ds303rpn0q10w" path="res://assets/sprites/cards/card-1.png" id="11_8en4c"]
+[ext_resource type="Script" path="res://assets/scripts/card-script3.gd" id="11_n1rr0"]
+[ext_resource type="Script" path="res://assets/scripts/card-script2.gd" id="12_aii4r"]
+[ext_resource type="Texture2D" uid="uid://bm6odtgtssjpa" path="res://assets/sprites/cards/card-3.png" id="12_oujwr"]
+[ext_resource type="Texture2D" uid="uid://dtyyqtdb258m2" path="res://assets/sprites/cards/card-2.png" id="13_x07hi"]
+[ext_resource type="Texture2D" uid="uid://bpweexavhevo2" path="res://assets/sprites/cards/card-0.png" id="14_upc5j"]
+[ext_resource type="Texture2D" uid="uid://f6jm12nbdwus" path="res://assets/sprites/cards/icons/plant-icon.png" id="15_2y64a"]
+[ext_resource type="Texture2D" uid="uid://dm7eygmdfw2ef" path="res://assets/sprites/cards/icons/wave-icon.png" id="18_qn3hr"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2ye3r"]
 animations = [{
@@ -67,6 +75,41 @@ func _process(delta):
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ywt8t"]
 size = Vector2(12.9162, 30.3358)
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_nkth3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_8en4c")
+}],
+"loop": true,
+"name": &"one",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_oujwr")
+}],
+"loop": true,
+"name": &"three",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_x07hi")
+}],
+"loop": true,
+"name": &"two",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_upc5j")
+}],
+"loop": true,
+"name": &"zero",
+"speed": 5.0
+}]
+
 [node name="root" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
@@ -75,8 +118,7 @@ script = ExtResource("1_0hfq1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 sprite_frames = SubResource("SpriteFrames_2ye3r")
-animation = &"neutral"
-frame_progress = 0.741641
+animation = &"jump"
 script = SubResource("GDScript_qy8ea")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
@@ -129,8 +171,24 @@ position = Vector2(92, 69)
 
 [node name="cards" type="Node2D" parent="."]
 
-[node name="card" type="Node2D" parent="cards"]
+[node name="card3" type="Node2D" parent="cards"]
+position = Vector2(0, 156.9)
+script = ExtResource("11_n1rr0")
 
-[node name="outline" type="Sprite2D" parent="cards/card"]
+[node name="outline" type="AnimatedSprite2D" parent="cards/card3"]
+sprite_frames = SubResource("SpriteFrames_nkth3")
+animation = &"one"
 
-[node name="icon" type="Sprite2D" parent="cards/card"]
+[node name="icon" type="Sprite2D" parent="cards/card3"]
+texture = ExtResource("15_2y64a")
+
+[node name="card2" type="Node2D" parent="cards"]
+position = Vector2(-69.17, 156.9)
+script = ExtResource("12_aii4r")
+
+[node name="outline" type="AnimatedSprite2D" parent="cards/card2"]
+sprite_frames = SubResource("SpriteFrames_nkth3")
+animation = &"three"
+
+[node name="icon" type="Sprite2D" parent="cards/card2"]
+texture = ExtResource("18_qn3hr")

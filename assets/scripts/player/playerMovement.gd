@@ -12,8 +12,8 @@ extends CharacterBody2D
 var t = Transform2D(0.0, Vector2(1.735, 1.45), 0.0, Vector2(4.205, -0.16))
 var flipx = Transform2D(0.0, Vector2(1.735, 1.45), 0.0, Vector2(-4.205, -0.16))
 
-var num_wave = 100000000000
-var num_plant = 1000000
+var num_wave = 3
+var num_plant = 3
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
