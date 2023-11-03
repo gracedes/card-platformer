@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgc3ipqykqio8"]
+
+[ext_resource type="Texture2D" uid="uid://bca6kxmq02ifa" path="res://assets/sprites/blocks/cloud.png" id="1_virmg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jgwhl"]
+size = Vector2(28, 12)
+
+[node name="cloud" type="StaticBody2D"]
+position = Vector2(0, 15)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_virmg")
+offset = Vector2(0.905, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_jgwhl")
+one_way_collision = true

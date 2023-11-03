@@ -1,5 +1,4 @@
 res://scenes/test.tscn
-res://assets/scripts/card-script.gd
 res://assets/scripts/player/playerMovement.gd
-res://assets/prefabs/blocks/spikes.tscn
-res://assets/prefabs/card.tscn
+res://assets/prefabs/cloud.tscn
+res://assets/scripts/cloud.gd

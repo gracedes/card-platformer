@@ -2,16 +2,19 @@ extends CharacterBody2D
 
 @onready var _animated_sprite = $AnimatedSprite2D
 @onready var _collision_shape = $CollisionShape2D
+@onready var root = get_node("..")
 
 @export var SPEED = 150.0
 @export var JUMP_VELOCITY = -300.0
 
 @export var WAVE_VELOCITY = 1875.0
 @export var PLANT_VELOCITY = -600.0
+@onready var cloud_prefab = preload("res://assets/prefabs/cloud.tscn")
 
 var t = Transform2D(0.0, Vector2(1.735, 1.45), 0.0, Vector2(4.205, -0.16))
 var flipx = Transform2D(0.0, Vector2(1.735, 1.45), 0.0, Vector2(-4.205, -0.16))
 
+var num_cloud = 3
 var num_wave = 3
 var num_plant = 3
 
@@ -43,10 +46,27 @@ func core_movement(delta):
 	move_and_slide()
 
 func check_abilities(delta):
+	if Input.is_action_just_pressed("ability1") and num_cloud > 0:
+		cloud_ability(delta)
 	if Input.is_action_just_pressed("ability2") and num_wave > 0:
 		wave_ability(delta)
 	if Input.is_action_just_pressed("ability3") and num_plant > 0:
 		plant_ability(delta)
+		
+func cloud_ability(delta):
+	num_cloud -= 1
+	var cloud_obj = cloud_prefab.instantiate()
+	
+	cloud_obj.position.x = self.position.x
+	
+	if _animated_sprite.flip_h == true:
+		cloud_obj.position.x -= 3
+	else:
+		cloud_obj.position.x += 3
+	
+	cloud_obj.position.y = self.position.y + 30
+	
+	root.add_child((cloud_obj))
 
 func wave_ability(delta):
 	num_wave -= 1

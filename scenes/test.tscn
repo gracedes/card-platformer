@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://dkpvywtxiqlka"]
+[gd_scene load_steps=25 format=3 uid="uid://dkpvywtxiqlka"]
 
 [ext_resource type="Script" path="res://assets/scripts/player/playerMovement.gd" id="1_0hfq1"]
 [ext_resource type="Texture2D" uid="uid://b2q77i64e7k5s" path="res://assets/sprites/protag/protag-outline-neutral.png" id="1_fdi6q"]
@@ -11,13 +11,16 @@
 [ext_resource type="PackedScene" uid="uid://1s7tuval67dj" path="res://assets/prefabs/blocks/inner-corner.tscn" id="9_wgccn"]
 [ext_resource type="PackedScene" uid="uid://bx7r3asko0vwd" path="res://assets/prefabs/blocks/corner.tscn" id="10_8b5ny"]
 [ext_resource type="Texture2D" uid="uid://ds303rpn0q10w" path="res://assets/sprites/cards/card-1.png" id="11_8en4c"]
+[ext_resource type="Texture2D" uid="uid://wsco38t22oct" path="res://assets/sprites/white.png" id="11_md5td"]
 [ext_resource type="Script" path="res://assets/scripts/card-script3.gd" id="11_n1rr0"]
 [ext_resource type="Script" path="res://assets/scripts/card-script2.gd" id="12_aii4r"]
 [ext_resource type="Texture2D" uid="uid://bm6odtgtssjpa" path="res://assets/sprites/cards/card-3.png" id="12_oujwr"]
 [ext_resource type="Texture2D" uid="uid://dtyyqtdb258m2" path="res://assets/sprites/cards/card-2.png" id="13_x07hi"]
 [ext_resource type="Texture2D" uid="uid://bpweexavhevo2" path="res://assets/sprites/cards/card-0.png" id="14_upc5j"]
 [ext_resource type="Texture2D" uid="uid://f6jm12nbdwus" path="res://assets/sprites/cards/icons/plant-icon.png" id="15_2y64a"]
+[ext_resource type="Script" path="res://assets/scripts/card-script1.gd" id="17_07l2n"]
 [ext_resource type="Texture2D" uid="uid://dm7eygmdfw2ef" path="res://assets/sprites/cards/icons/wave-icon.png" id="18_qn3hr"]
+[ext_resource type="Texture2D" uid="uid://c31xg6k56oej3" path="res://assets/sprites/cards/icons/cloud-icon.png" id="19_fate4"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2ye3r"]
 animations = [{
@@ -57,20 +60,6 @@ animations = [{
 "name": &"run",
 "speed": 7.0
 }]
-
-[sub_resource type="GDScript" id="GDScript_qy8ea"]
-script/source = "extends AnimatedSprite2D
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ywt8t"]
 size = Vector2(12.9162, 30.3358)
@@ -119,7 +108,6 @@ script = ExtResource("1_0hfq1")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 sprite_frames = SubResource("SpriteFrames_2ye3r")
 animation = &"jump"
-script = SubResource("GDScript_qy8ea")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(4.20477, -0.160004)
@@ -171,7 +159,14 @@ position = Vector2(92, 69)
 
 [node name="cards" type="Node2D" parent="."]
 
+[node name="Sprite2D" type="Sprite2D" parent="cards"]
+z_index = 1
+position = Vector2(0, 156.9)
+scale = Vector2(16.27, 6.64)
+texture = ExtResource("11_md5td")
+
 [node name="card3" type="Node2D" parent="cards"]
+z_index = 2
 position = Vector2(0, 156.9)
 script = ExtResource("11_n1rr0")
 
@@ -183,7 +178,8 @@ animation = &"one"
 texture = ExtResource("15_2y64a")
 
 [node name="card2" type="Node2D" parent="cards"]
-position = Vector2(-69.17, 156.9)
+z_index = 2
+position = Vector2(-70, 156.9)
 script = ExtResource("12_aii4r")
 
 [node name="outline" type="AnimatedSprite2D" parent="cards/card2"]
@@ -192,3 +188,15 @@ animation = &"three"
 
 [node name="icon" type="Sprite2D" parent="cards/card2"]
 texture = ExtResource("18_qn3hr")
+
+[node name="card1" type="Node2D" parent="cards"]
+z_index = 2
+position = Vector2(-140, 156.9)
+script = ExtResource("17_07l2n")
+
+[node name="outline" type="AnimatedSprite2D" parent="cards/card1"]
+sprite_frames = SubResource("SpriteFrames_nkth3")
+animation = &"three"
+
+[node name="icon" type="Sprite2D" parent="cards/card1"]
+texture = ExtResource("19_fate4")
