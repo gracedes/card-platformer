@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://dkpvywtxiqlka"]
+[gd_scene load_steps=27 format=3 uid="uid://dkpvywtxiqlka"]
 
 [ext_resource type="Script" path="res://assets/scripts/player/playerMovement.gd" id="1_0hfq1"]
 [ext_resource type="Texture2D" uid="uid://b2q77i64e7k5s" path="res://assets/sprites/protag/protag-outline-neutral.png" id="1_fdi6q"]
@@ -19,6 +19,8 @@
 [ext_resource type="Texture2D" uid="uid://bpweexavhevo2" path="res://assets/sprites/cards/card-0.png" id="14_upc5j"]
 [ext_resource type="Texture2D" uid="uid://f6jm12nbdwus" path="res://assets/sprites/cards/icons/plant-icon.png" id="15_2y64a"]
 [ext_resource type="Script" path="res://assets/scripts/card-script1.gd" id="17_07l2n"]
+[ext_resource type="Texture2D" uid="uid://cer5jmtjs5dw0" path="res://assets/sprites/cards/icons/slingshot-icon.png" id="18_1rjha"]
+[ext_resource type="Script" path="res://scenes/card-script5.gd" id="18_2y71i"]
 [ext_resource type="Texture2D" uid="uid://dm7eygmdfw2ef" path="res://assets/sprites/cards/icons/wave-icon.png" id="18_qn3hr"]
 [ext_resource type="Texture2D" uid="uid://c31xg6k56oej3" path="res://assets/sprites/cards/icons/cloud-icon.png" id="19_fate4"]
 
@@ -176,6 +178,18 @@ animation = &"one"
 
 [node name="icon" type="Sprite2D" parent="cards/card3"]
 texture = ExtResource("15_2y64a")
+
+[node name="card5" type="Node2D" parent="cards"]
+z_index = 2
+position = Vector2(140, 156.9)
+script = ExtResource("18_2y71i")
+
+[node name="outline" type="AnimatedSprite2D" parent="cards/card5"]
+sprite_frames = SubResource("SpriteFrames_nkth3")
+animation = &"one"
+
+[node name="icon" type="Sprite2D" parent="cards/card5"]
+texture = ExtResource("18_1rjha")
 
 [node name="card2" type="Node2D" parent="cards"]
 z_index = 2
