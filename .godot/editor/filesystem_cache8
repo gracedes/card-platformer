@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699028473
+::res://::1699029341
 ::res://addons/::1698354855
 ::res://addons/discord-sdk-gd/::1698355064
 Debug.svg::CompressedTexture2D::1414570589633831756::1698355064::1698355064::1::::<><>::
@@ -36,8 +36,8 @@ wall.tscn::PackedScene::3475615891258577546::1697744838::0::1::::<><>::uid://bxn
 card-script1.gd::GDScript::-1::1699028444::0::1::::<>Node2D<>::
 card-script2.gd::GDScript::-1::1698962699::0::1::::<>Node2D<>::
 card-script3.gd::GDScript::-1::1698962731::0::1::::<>Node2D<>::
-::res://assets/scripts/player/::1699028444
-playerMovement.gd::GDScript::-1::1699028444::0::1::::<>CharacterBody2D<>::
+::res://assets/scripts/player/::1699030949
+playerMovement.gd::GDScript::-1::1699030949::0::1::::<>CharacterBody2D<>::
 ::res://assets/sprites/::1699028445
 placeholder-floor.png::CompressedTexture2D::8784176981769327234::1697303687::1697303691::1::::<><>::
 white.png::CompressedTexture2D::1581461317242771255::1699028445::1699028445::1::::<><>::
@@ -55,12 +55,12 @@ card-0.png::CompressedTexture2D::3484920869000320891::1698961686::1698961723::1:
 card-1.png::CompressedTexture2D::8482032657419805888::1698961694::1698961723::1::::<><>::
 card-2.png::CompressedTexture2D::8543881929489026743::1698961703::1698961723::1::::<><>::
 card-3.png::CompressedTexture2D::3293538921106312626::1698961713::1698961723::1::::<><>::
-::res://assets/sprites/cards/icons/::1698357828
-cloud-icon.png::CompressedTexture2D::6793211661530664062::1698357813::1698357828::1::::<><>::
-fire-icon.png::CompressedTexture2D::2792579249964845299::1698357823::1698357828::1::::<><>::
-plant-icon.png::CompressedTexture2D::415509218936735770::1698357804::1697724743::1::::<><>::
-slingshot-icon.png::CompressedTexture2D::5090529405751127681::1698357790::1698357828::1::::<><>::
-wave-icon.png::CompressedTexture2D::8067874323712025817::1698357772::1698357828::1::::<><>::
+::res://assets/sprites/cards/icons/::1699032227
+cloud-icon.png::CompressedTexture2D::6793211661530664062::1699031772::1699031774::1::::<><>::
+fire-icon.png::CompressedTexture2D::2792579249964845299::1699032144::1699032232::1::::<><>::
+plant-icon.png::CompressedTexture2D::415509218936735770::1699032070::1699032232::1::::<><>::
+slingshot-icon.png::CompressedTexture2D::5090529405751127681::1699032227::1699032232::1::::<><>::
+wave-icon.png::CompressedTexture2D::8067874323712025817::1699031909::1699032232::1::::<><>::
 ::res://assets/sprites/protag/::1697302415
 protag-outline-neutral2.png::CompressedTexture2D::2698139590536154080::1697300312::1697302415::1::::<><>::
 protag-outline-neutral.png::CompressedTexture2D::4316550064558396374::1697300136::1697302415::1::::<><>::
@@ -75,5 +75,6 @@ protag-outline-jump-up.png::CompressedTexture2D::4963228544600919140::1697301733
 protag-outline-run-1.png::CompressedTexture2D::3117274799770971378::1697300643::1697302415::1::::<><>::
 protag-outline-run-2.png::CompressedTexture2D::6771859344472280356::1697300970::1697302415::1::::<><>::
 protag-outline-run-3.png::CompressedTexture2D::6777608103827611991::1697300981::1697302415::1::::<><>::
-::res://scenes/::1699028445
-test.tscn::PackedScene::7893435255593671328::1699028445::0::1::::<><>::res://assets/scripts/player/playerMovement.gd<>uid://b2q77i64e7k5s::::res://assets/sprites/protag/protag-outline-neutral.png<>uid://bkobcb7njjasw::::res://assets/sprites/protag/run/protag-outline-run-1.png<>uid://beo872mt2js7a::::res://assets/sprites/protag/protag-outline-neutral2.png<>uid://ccyhwciapto6g::::res://assets/sprites/protag/jump/protag-outline-jump-up.png<>uid://c3tehk3fekxch::::res://assets/sprites/protag/run/protag-outline-run-3.png<>uid://c3qlsflhnmd7i::::res://assets/sprites/protag/run/protag-outline-run-2.png<>uid://bpru5ee2dc6ha::::res://assets/prefabs/blocks/wall.tscn<>uid://1s7tuval67dj::::res://assets/prefabs/blocks/inner-corner.tscn<>uid://bx7r3asko0vwd::::res://assets/prefabs/blocks/corner.tscn<>uid://ds303rpn0q10w::::res://assets/sprites/cards/card-1.png<>uid://wsco38t22oct::::res://assets/sprites/white.png<>res://assets/scripts/card-script3.gd<>res://assets/scripts/card-script2.gd<>uid://bm6odtgtssjpa::::res://assets/sprites/cards/card-3.png<>uid://dtyyqtdb258m2::::res://assets/sprites/cards/card-2.png<>uid://bpweexavhevo2::::res://assets/sprites/cards/card-0.png<>uid://f6jm12nbdwus::::res://assets/sprites/cards/icons/plant-icon.png<>res://assets/scripts/card-script1.gd<>uid://dm7eygmdfw2ef::::res://assets/sprites/cards/icons/wave-icon.png<>uid://c31xg6k56oej3::::res://assets/sprites/cards/icons/cloud-icon.png
+::res://scenes/::1699031057
+card-script5.gd::GDScript::-1::1699031057::0::1::::<>Node2D<>::
+test.tscn::PackedScene::7893435255593671328::1699031057::0::1::::<><>::res://assets/scripts/player/playerMovement.gd<>uid://b2q77i64e7k5s::::res://assets/sprites/protag/protag-outline-neutral.png<>uid://bkobcb7njjasw::::res://assets/sprites/protag/run/protag-outline-run-1.png<>uid://beo872mt2js7a::::res://assets/sprites/protag/protag-outline-neutral2.png<>uid://ccyhwciapto6g::::res://assets/sprites/protag/jump/protag-outline-jump-up.png<>uid://c3tehk3fekxch::::res://assets/sprites/protag/run/protag-outline-run-3.png<>uid://c3qlsflhnmd7i::::res://assets/sprites/protag/run/protag-outline-run-2.png<>uid://bpru5ee2dc6ha::::res://assets/prefabs/blocks/wall.tscn<>uid://1s7tuval67dj::::res://assets/prefabs/blocks/inner-corner.tscn<>uid://bx7r3asko0vwd::::res://assets/prefabs/blocks/corner.tscn<>uid://ds303rpn0q10w::::res://assets/sprites/cards/card-1.png<>uid://wsco38t22oct::::res://assets/sprites/white.png<>res://assets/scripts/card-script3.gd<>res://assets/scripts/card-script2.gd<>uid://bm6odtgtssjpa::::res://assets/sprites/cards/card-3.png<>uid://dtyyqtdb258m2::::res://assets/sprites/cards/card-2.png<>uid://bpweexavhevo2::::res://assets/sprites/cards/card-0.png<>uid://f6jm12nbdwus::::res://assets/sprites/cards/icons/plant-icon.png<>res://assets/scripts/card-script1.gd<>uid://cer5jmtjs5dw0::::res://assets/sprites/cards/icons/slingshot-icon.png<>res://scenes/card-script5.gd<>uid://dm7eygmdfw2ef::::res://assets/sprites/cards/icons/wave-icon.png<>uid://c31xg6k56oej3::::res://assets/sprites/cards/icons/cloud-icon.png
