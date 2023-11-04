@@ -10,6 +10,7 @@ extends CharacterBody2D
 @export var WAVE_VELOCITY = 1875.0
 @export var PLANT_VELOCITY = -600.0
 @onready var cloud_prefab = preload("res://assets/prefabs/cloud.tscn")
+@onready var fire_prefab = preload("res://assets/prefabs/fireball.tscn")
 var mid_sling = false
 @export var sling_time = 2.0
 var sling_count = 0.0
@@ -23,6 +24,7 @@ var flipx = Transform2D(0.0, Vector2(1.735, 1.45), 0.0, Vector2(-4.205, -0.16))
 var num_cloud = 3
 var num_wave = 3
 var num_plant = 3
+var num_fire = 1000000000000000
 var num_sling = 3
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -62,6 +64,8 @@ func check_abilities(delta):
 		wave_ability(delta)
 	if Input.is_action_just_pressed("ability3") and num_plant > 0 and not mid_sling:
 		plant_ability(delta)
+	if Input.is_action_just_pressed("ability4") and num_fire > 0 and not mid_sling:
+		fire_ability(delta)
 	if mid_sling or (Input.is_action_just_pressed("ability5") and num_sling > 0):
 		sling_ability(delta)
 
@@ -90,6 +94,21 @@ func wave_ability(delta):
 func plant_ability(delta):
 	num_plant -= 1
 	velocity.y = PLANT_VELOCITY
+	
+func fire_ability(delta):
+	num_fire -= 1
+	var fire_obj = fire_prefab.instantiate()
+	
+	fire_obj.position.x = self.position.x
+	
+	if _animated_sprite.flip_h == true:
+		fire_obj.position.x -= 20
+	else:
+		fire_obj.position.x += 20
+	
+	fire_obj.position.y = self.position.y
+	
+	root.add_child((fire_obj))
 	
 func sling_ability(delta):
 	if not mid_sling:

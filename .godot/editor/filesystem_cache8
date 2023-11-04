@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699114003
+::res://::1699118089
 ::res://addons/::1698354855
 ::res://addons/discord-sdk-gd/::1698355064
 Debug.svg::CompressedTexture2D::1414570589633831756::1698355064::1698355064::1::::<><>::
@@ -21,9 +21,7 @@ Debug.tscn::PackedScene::6635590667203094151::1698355064::0::1::::<><>::uid://dn
 Checked.svg::CompressedTexture2D::8083066295081234619::1698355064::1698355064::1::::<><>::
 circle.svg::CompressedTexture2D::8498865176304625629::1698355064::1698355064::1::::<><>::
 Unchecked.svg::CompressedTexture2D::5781190569803204660::1698355064::1698355064::1::::<><>::
-::res://assets/::1699116302
-skeledog2.png::CompressedTexture2D::2553192266437899569::1699116302::1699116302::1::::<><>::
-skeledog.png::CompressedTexture2D::8359049276488136003::1699116299::1699116299::1::::<><>::
+::res://assets/::1699116667
 ::res://assets/prefabs/::1699028444
 cloud.tscn::PackedScene::2813397676849690045::1699028444::0::1::::<><>::uid://bca6kxmq02ifa
 ::res://assets/prefabs/blocks/::1698962484
@@ -40,7 +38,7 @@ card-script2.gd::GDScript::-1::1698962699::0::1::::<>Node2D<>::
 card-script3.gd::GDScript::-1::1698962731::0::1::::<>Node2D<>::
 ::res://assets/scripts/player/::1699030949
 playerMovement.gd::GDScript::-1::1699030949::0::1::::<>CharacterBody2D<>::
-::res://assets/sprites/::1699028445
+::res://assets/sprites/::1699117555
 placeholder-floor.png::CompressedTexture2D::8784176981769327234::1697303687::1697303691::1::::<><>::
 white.png::CompressedTexture2D::1581461317242771255::1699028445::1699028445::1::::<><>::
 ::res://assets/sprites/blocks/::1699028444
@@ -63,6 +61,12 @@ fire-icon.png::CompressedTexture2D::2792579249964845299::1699032144::1699032232:
 plant-icon.png::CompressedTexture2D::415509218936735770::1699032070::1699032232::1::::<><>::
 slingshot-icon.png::CompressedTexture2D::5090529405751127681::1699032227::1699032232::1::::<><>::
 wave-icon.png::CompressedTexture2D::8067874323712025817::1699031909::1699032232::1::::<><>::
+::res://assets/sprites/fire/::1699118071
+fireball.png::CompressedTexture2D::3182250051988418526::1699117604::1699118090::1::::<><>::
+flame1.png::CompressedTexture2D::6950218052422553627::1699117796::1699118090::1::::<><>::
+flame2.png::CompressedTexture2D::5413010551079538785::1699117883::1699118090::1::::<><>::
+flame3.png::CompressedTexture2D::3147703191406511947::1699117982::1699118090::1::::<><>::
+flame4.png::CompressedTexture2D::8960618302925738346::1699118010::1699118090::1::::<><>::
 ::res://assets/sprites/protag/::1697302415
 protag-outline-neutral2.png::CompressedTexture2D::2698139590536154080::1697300312::1697302415::1::::<><>::
 protag-outline-neutral.png::CompressedTexture2D::4316550064558396374::1697300136::1697302415::1::::<><>::
@@ -77,6 +81,9 @@ protag-outline-jump-up.png::CompressedTexture2D::4963228544600919140::1697301733
 protag-outline-run-1.png::CompressedTexture2D::3117274799770971378::1697300643::1697302415::1::::<><>::
 protag-outline-run-2.png::CompressedTexture2D::6771859344472280356::1697300970::1697302415::1::::<><>::
 protag-outline-run-3.png::CompressedTexture2D::6777608103827611991::1697300981::1697302415::1::::<><>::
+::res://assets/sprites/skeledog/::1699116652
+skeledog2.png::CompressedTexture2D::7762162313883802244::1699116227::1699118090::1::::<><>::
+skeledog.png::CompressedTexture2D::4363226518176680417::1699115741::1699118090::1::::<><>::
 ::res://scenes/::1699114848
 card-script5.gd::GDScript::-1::1699031057::0::1::::<>Node2D<>::
 test.tscn::PackedScene::7893435255593671328::1699114848::0::1::::<><>::res://assets/scripts/player/playerMovement.gd<>uid://b2q77i64e7k5s::::res://assets/sprites/protag/protag-outline-neutral.png<>uid://bkobcb7njjasw::::res://assets/sprites/protag/run/protag-outline-run-1.png<>uid://beo872mt2js7a::::res://assets/sprites/protag/protag-outline-neutral2.png<>uid://ccyhwciapto6g::::res://assets/sprites/protag/jump/protag-outline-jump-up.png<>uid://c3tehk3fekxch::::res://assets/sprites/protag/run/protag-outline-run-3.png<>uid://c3qlsflhnmd7i::::res://assets/sprites/protag/run/protag-outline-run-2.png<>uid://bpru5ee2dc6ha::::res://assets/prefabs/blocks/wall.tscn<>uid://1s7tuval67dj::::res://assets/prefabs/blocks/inner-corner.tscn<>uid://bx7r3asko0vwd::::res://assets/prefabs/blocks/corner.tscn<>uid://ds303rpn0q10w::::res://assets/sprites/cards/card-1.png<>uid://wsco38t22oct::::res://assets/sprites/white.png<>res://assets/scripts/card-script3.gd<>res://assets/scripts/card-script2.gd<>uid://bm6odtgtssjpa::::res://assets/sprites/cards/card-3.png<>uid://dtyyqtdb258m2::::res://assets/sprites/cards/card-2.png<>uid://bpweexavhevo2::::res://assets/sprites/cards/card-0.png<>uid://f6jm12nbdwus::::res://assets/sprites/cards/icons/plant-icon.png<>res://assets/scripts/card-script1.gd<>uid://cer5jmtjs5dw0::::res://assets/sprites/cards/icons/slingshot-icon.png<>res://scenes/card-script5.gd<>uid://dm7eygmdfw2ef::::res://assets/sprites/cards/icons/wave-icon.png<>uid://c31xg6k56oej3::::res://assets/sprites/cards/icons/cloud-icon.png
