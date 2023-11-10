@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @onready var _animated_sprite = $AnimatedSprite2D
 @onready var _collision_shape = $CollisionShape2D
+@onready var _sling_ani = $"sling-ani"
 @onready var root = get_node("..")
 
 @export var SPEED = 150.0
@@ -24,12 +25,14 @@ var flipx = Transform2D(0.0, Vector2(1.735, 1.45), 0.0, Vector2(-4.205, -0.16))
 var num_cloud = 3
 var num_wave = 3
 var num_plant = 3
-var num_fire = 1000000000000000
-var num_sling = 3
+var num_fire = 3
+var num_sling = 15
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
+func _ready():
+	_sling_ani.hide()
 
 func _physics_process(delta):
 	core_movement(delta)
@@ -115,10 +118,14 @@ func sling_ability(delta):
 		mid_sling = true
 		sling_count = 0.0
 		num_sling -= 1
+		_sling_ani.show()
+		_sling_ani.frame = 0
+		_sling_ani.play("default")
 	elif mid_sling and sling_count < sling_time:
 		sling_count += delta
 	elif sling_count >= sling_time:
 		mid_sling = false
+		_sling_ani.hide()
 		sling_count = 0.0
 		var vector = Vector2(0, 0)
 		if Input.is_action_pressed("left"):
@@ -132,7 +139,6 @@ func sling_ability(delta):
 		vector *= sling_coefficient
 		velocity = vector
 		post_sling = post_sling_coefficient
-		print(vector)
 
 func _process(_delta):
 	animation()

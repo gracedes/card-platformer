@@ -1,8 +1,2 @@
 res://scenes/test.tscn
-res://assets/scripts/fireball-script.gd
-res://assets/prefabs/fireball.tscn
 res://assets/scripts/player/playerMovement.gd
-res://scenes/card-script5.gd
-res://assets/scripts/card-script3.gd
-res://assets/scripts/card-script1.gd
-res://assets/scripts/card-script2.gd
