@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://dkpvywtxiqlka"]
+[gd_scene load_steps=43 format=3 uid="uid://dkpvywtxiqlka"]
 
 [ext_resource type="Script" path="res://assets/scripts/player/playerMovement.gd" id="1_0hfq1"]
 [ext_resource type="Texture2D" uid="uid://b2q77i64e7k5s" path="res://assets/sprites/protag/protag-outline-neutral.png" id="1_fdi6q"]
@@ -36,6 +36,8 @@
 [ext_resource type="Texture2D" uid="uid://c31xg6k56oej3" path="res://assets/sprites/cards/icons/cloud-icon.png" id="19_fate4"]
 [ext_resource type="Texture2D" uid="uid://bsny2qt7x8qbq" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0011_Layer-2.png" id="19_n5moq"]
 [ext_resource type="Texture2D" uid="uid://blhg3diqpt3h4" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0012_Layer-1.png" id="20_5y5r6"]
+[ext_resource type="Script" path="res://assets/scripts/card-script4.gd" id="31_3ymle"]
+[ext_resource type="Texture2D" uid="uid://bf10mwk0yhx68" path="res://assets/sprites/cards/icons/fire-icon.png" id="32_05met"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2ye3r"]
 animations = [{
@@ -277,6 +279,18 @@ animation = &"one"
 
 [node name="icon" type="Sprite2D" parent="cards/card3"]
 texture = ExtResource("15_2y64a")
+
+[node name="card4" type="Node2D" parent="cards"]
+z_index = 2
+position = Vector2(70, 156.9)
+script = ExtResource("31_3ymle")
+
+[node name="outline" type="AnimatedSprite2D" parent="cards/card4"]
+sprite_frames = SubResource("SpriteFrames_nkth3")
+animation = &"one"
+
+[node name="icon" type="Sprite2D" parent="cards/card4"]
+texture = ExtResource("32_05met")
 
 [node name="card5" type="Node2D" parent="cards"]
 z_index = 2

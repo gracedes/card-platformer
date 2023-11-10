@@ -1,2 +1,4 @@
+res://scenes/card-script5.gd
 res://scenes/test.tscn
+res://assets/scripts/card-script4.gd
 res://assets/scripts/player/playerMovement.gd
