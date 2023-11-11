@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://dkpvywtxiqlka"]
+[gd_scene load_steps=45 format=3 uid="uid://dkpvywtxiqlka"]
 
 [ext_resource type="Script" path="res://assets/scripts/player/playerMovement.gd" id="1_0hfq1"]
 [ext_resource type="Texture2D" uid="uid://b2q77i64e7k5s" path="res://assets/sprites/protag/protag-outline-neutral.png" id="1_fdi6q"]
@@ -36,6 +36,8 @@
 [ext_resource type="Texture2D" uid="uid://c31xg6k56oej3" path="res://assets/sprites/cards/icons/cloud-icon.png" id="19_fate4"]
 [ext_resource type="Texture2D" uid="uid://bsny2qt7x8qbq" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0011_Layer-2.png" id="19_n5moq"]
 [ext_resource type="Texture2D" uid="uid://blhg3diqpt3h4" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0012_Layer-1.png" id="20_5y5r6"]
+[ext_resource type="PackedScene" uid="uid://b4rfphb3mp1f6" path="res://assets/prefabs/blocks/spikes.tscn" id="24_tsowb"]
+[ext_resource type="PackedScene" uid="uid://b1s1mi1vqntsc" path="res://assets/prefabs/blocks/pixel.tscn" id="25_0ajdj"]
 [ext_resource type="Script" path="res://assets/scripts/card-script4.gd" id="31_3ymle"]
 [ext_resource type="Texture2D" uid="uid://bf10mwk0yhx68" path="res://assets/sprites/cards/icons/fire-icon.png" id="32_05met"]
 
@@ -161,7 +163,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 12.0
+"speed": 24.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_nkth3"]
@@ -202,12 +204,12 @@ animations = [{
 [node name="root" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-position = Vector2(-130, -98)
+position = Vector2(-130, 32)
 script = ExtResource("1_0hfq1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 sprite_frames = SubResource("SpriteFrames_2ye3r")
-animation = &"jump"
+animation = &"neutral"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(4.20477, -0.160004)
@@ -260,6 +262,12 @@ position = Vector2(62, 39)
 [node name="StaticBody2D11" parent="platform" instance=ExtResource("9_wgccn")]
 position = Vector2(92, 69)
 
+[node name="spike" parent="platform" instance=ExtResource("24_tsowb")]
+position = Vector2(32, -21)
+
+[node name="pixel" parent="platform" instance=ExtResource("25_0ajdj")]
+position = Vector2(48, -6)
+
 [node name="cards" type="Node2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="cards"]
@@ -275,7 +283,7 @@ script = ExtResource("11_n1rr0")
 
 [node name="outline" type="AnimatedSprite2D" parent="cards/card3"]
 sprite_frames = SubResource("SpriteFrames_nkth3")
-animation = &"one"
+animation = &"three"
 
 [node name="icon" type="Sprite2D" parent="cards/card3"]
 texture = ExtResource("15_2y64a")
@@ -287,7 +295,7 @@ script = ExtResource("31_3ymle")
 
 [node name="outline" type="AnimatedSprite2D" parent="cards/card4"]
 sprite_frames = SubResource("SpriteFrames_nkth3")
-animation = &"one"
+animation = &"three"
 
 [node name="icon" type="Sprite2D" parent="cards/card4"]
 texture = ExtResource("32_05met")
@@ -299,7 +307,7 @@ script = ExtResource("18_2y71i")
 
 [node name="outline" type="AnimatedSprite2D" parent="cards/card5"]
 sprite_frames = SubResource("SpriteFrames_nkth3")
-animation = &"one"
+animation = &"three"
 
 [node name="icon" type="Sprite2D" parent="cards/card5"]
 texture = ExtResource("18_1rjha")

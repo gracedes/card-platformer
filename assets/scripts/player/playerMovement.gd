@@ -13,11 +13,14 @@ extends CharacterBody2D
 @onready var cloud_prefab = preload("res://assets/prefabs/cloud.tscn")
 @onready var fire_prefab = preload("res://assets/prefabs/fireball.tscn")
 var mid_sling = false
-@export var sling_time = 2.0
+@export var sling_time = 1.0
 var sling_count = 0.0
 var sling_coefficient = 400
 var post_sling = -1
 var post_sling_coefficient = 0.15
+
+var spawn_time = 0.0
+var spawn_buffer = 0.1
 
 var t = Transform2D(0.0, Vector2(1.735, 1.45), 0.0, Vector2(4.205, -0.16))
 var flipx = Transform2D(0.0, Vector2(1.735, 1.45), 0.0, Vector2(-4.205, -0.16))
@@ -35,8 +38,11 @@ func _ready():
 	_sling_ani.hide()
 
 func _physics_process(delta):
-	core_movement(delta)
-	check_abilities(delta)
+	if (spawn_time > spawn_buffer):
+		core_movement(delta)
+		check_abilities(delta)
+		check_offscreen()
+	spawn_time += delta
 
 func core_movement(delta):
 	# Add the gravity.
@@ -139,12 +145,17 @@ func sling_ability(delta):
 		vector *= sling_coefficient
 		velocity = vector
 		post_sling = post_sling_coefficient
+		
+func check_offscreen():
+	if position.y > 160.0:
+		get_tree().reload_current_scene()
 
 func _process(_delta):
-	animation()
+	if not (spawn_time < spawn_buffer):
+		animation()
 
 func animation():
-	if not is_on_floor():
+	if not is_on_floor() and not spawn_time < spawn_buffer + 0.1:
 		if Input.is_action_pressed("left") and not Input.is_action_pressed("right"):
 			_animated_sprite.flip_h = true
 			_collision_shape.transform = flipx

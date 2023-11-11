@@ -1,4 +1,4 @@
-res://scenes/card-script5.gd
+res://assets/prefabs/blocks/spikes.tscn
 res://scenes/test.tscn
-res://assets/scripts/card-script4.gd
 res://assets/scripts/player/playerMovement.gd
+res://assets/scripts/spikescript.gd

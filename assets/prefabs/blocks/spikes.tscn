@@ -1,10 +1,25 @@
-[gd_scene load_steps=2 format=3 uid="uid://b4rfphb3mp1f6"]
+[gd_scene load_steps=3 format=3 uid="uid://b4rfphb3mp1f6"]
 
+[ext_resource type="Script" path="res://assets/scripts/spikescript.gd" id="1_2a2y0"]
 [ext_resource type="Texture2D" uid="uid://qqshbppk8cnu" path="res://assets/sprites/blocks/spikes.png" id="1_kyvl0"]
 
 [node name="StaticBody2D" type="StaticBody2D"]
 rotation = 1.5708
+script = ExtResource("1_2a2y0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 rotation = -1.5708
 texture = ExtResource("1_kyvl0")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PackedVector2Array(15.0001, 13.9999, 11, 9.99996, 11, 8.99996, 15, 4.99995)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2(0.999968, -9)
+polygon = PackedVector2Array(15.0001, 13.9999, 11, 9.99996, 11, 8.99996, 15, 4.99995)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2(0.999931, -19)
+polygon = PackedVector2Array(15.0001, 13.9999, 11, 9.99996, 11, 8.99996, 15, 4.99995)
