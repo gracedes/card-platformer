@@ -25,7 +25,7 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qe4lo"]
 
-[node name="StaticBody2D" type="StaticBody2D" groups=["crate"]]
+[node name="StaticBody2D" type="StaticBody2D"]
 rotation = 1.5708
 script = ExtResource("1_lafrr")
 
@@ -36,7 +36,7 @@ sprite_frames = SubResource("SpriteFrames_08wtx")
 scale = Vector2(1.5, 1.5)
 shape = SubResource("RectangleShape2D_qe4lo")
 
-[node name="Area2D" type="Area2D" parent="." groups=["wall"]]
+[node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 scale = Vector2(1.5, 1.5)

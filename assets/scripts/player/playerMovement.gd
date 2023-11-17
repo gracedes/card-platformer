@@ -5,15 +5,15 @@ extends CharacterBody2D
 @onready var _sling_ani = $"sling-ani"
 @onready var root = get_node("..")
 
-@export var SPEED = 150.0
-@export var JUMP_VELOCITY = -300.0
+var SPEED = 150.0
+var JUMP_VELOCITY = -300.0
 
-@export var WAVE_VELOCITY = 1875.0
-@export var PLANT_VELOCITY = -600.0
+var WAVE_VELOCITY = 1875.0
+var PLANT_VELOCITY = -600.0
 @onready var cloud_prefab = preload("res://assets/prefabs/cloud.tscn")
 @onready var fire_prefab = preload("res://assets/prefabs/fireball.tscn")
 var mid_sling = false
-@export var sling_time = 1.0
+var sling_time = 1.0
 var sling_count = 0.0
 var sling_coefficient = 400
 var post_sling = -1
@@ -25,11 +25,11 @@ var spawn_buffer = 0.1
 var t = Transform2D(0.0, Vector2(1.735, 1.45), 0.0, Vector2(4.205, -0.16))
 var flipx = Transform2D(0.0, Vector2(1.735, 1.45), 0.0, Vector2(-4.205, -0.16))
 
-var num_cloud = 3
-var num_wave = 3
-var num_plant = 3
-var num_fire = 3
-var num_sling = 3
+@export var num_cloud = 3
+@export var num_wave = 3
+@export var num_plant = 3
+@export var num_fire = 3
+@export var num_sling = 3
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")

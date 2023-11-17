@@ -1,0 +1,163 @@
+[gd_scene load_steps=24 format=3 uid="uid://dp0ffe2ki7eoj"]
+
+[ext_resource type="Script" path="res://assets/scripts/player/playerMovement.gd" id="1_qpxxs"]
+[ext_resource type="Texture2D" uid="uid://ccyhwciapto6g" path="res://assets/sprites/protag/jump/protag-outline-jump-up.png" id="2_6n0to"]
+[ext_resource type="Texture2D" uid="uid://b2q77i64e7k5s" path="res://assets/sprites/protag/protag-outline-neutral.png" id="3_ldhmo"]
+[ext_resource type="Texture2D" uid="uid://beo872mt2js7a" path="res://assets/sprites/protag/protag-outline-neutral2.png" id="4_68n2v"]
+[ext_resource type="Texture2D" uid="uid://bkobcb7njjasw" path="res://assets/sprites/protag/run/protag-outline-run-1.png" id="5_5y47i"]
+[ext_resource type="Texture2D" uid="uid://c3tehk3fekxch" path="res://assets/sprites/protag/run/protag-outline-run-3.png" id="6_8gonr"]
+[ext_resource type="Texture2D" uid="uid://c3qlsflhnmd7i" path="res://assets/sprites/protag/run/protag-outline-run-2.png" id="7_t7esh"]
+[ext_resource type="Texture2D" uid="uid://kjn2dx0asb5l" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0000_Layer-13.png" id="8_gerij"]
+[ext_resource type="Texture2D" uid="uid://drr0tpxck5yss" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0001_Layer-12.png" id="9_2fwmk"]
+[ext_resource type="Texture2D" uid="uid://bx28du3cub5ky" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0002_Layer-11.png" id="10_j4ta8"]
+[ext_resource type="Texture2D" uid="uid://bx5ry0ssbc6vs" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0003_Layer-10.png" id="11_tgv31"]
+[ext_resource type="Texture2D" uid="uid://d2dcdmoevfxrx" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0004_Layer-9.png" id="12_rbjo5"]
+[ext_resource type="Texture2D" uid="uid://cx7vj3vw8tlkv" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0005_Layer-8.png" id="13_ewx31"]
+[ext_resource type="Texture2D" uid="uid://cd2m14femt2j4" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0006_Layer-7.png" id="14_ke5yk"]
+[ext_resource type="Texture2D" uid="uid://cgg8i83ju0t8q" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0007_Layer-6.png" id="15_3soxe"]
+[ext_resource type="Texture2D" uid="uid://dk8s140vs56sm" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0008_Layer-5.png" id="16_j7sri"]
+[ext_resource type="Texture2D" uid="uid://cqyto6cfouhhs" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0009_Layer-4.png" id="17_iwtau"]
+[ext_resource type="Texture2D" uid="uid://1cdrt80urmoy" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0010_Layer-3.png" id="18_son1m"]
+[ext_resource type="Texture2D" uid="uid://bsny2qt7x8qbq" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0011_Layer-2.png" id="19_mcndn"]
+[ext_resource type="Texture2D" uid="uid://blhg3diqpt3h4" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0012_Layer-1.png" id="20_2lfei"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2ye3r"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_6n0to")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ldhmo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_68n2v")
+}],
+"loop": true,
+"name": &"neutral",
+"speed": 0.5
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_5y47i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_8gonr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_5y47i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_t7esh")
+}],
+"loop": true,
+"name": &"run",
+"speed": 7.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ywt8t"]
+size = Vector2(12.9162, 30.3358)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qr26c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_gerij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_2fwmk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_j4ta8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_tgv31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_rbjo5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ewx31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ke5yk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_3soxe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_j7sri")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_iwtau")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_son1m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_mcndn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_2lfei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_mcndn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_son1m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_iwtau")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_j7sri")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_3soxe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ke5yk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ewx31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_rbjo5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_tgv31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_j4ta8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_2fwmk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_gerij")
+}],
+"loop": true,
+"name": &"default",
+"speed": 24.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(-130, 32)
+script = ExtResource("1_qpxxs")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_2ye3r")
+animation = &"neutral"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4.20477, -0.160004)
+scale = Vector2(1.735, 1.45)
+shape = SubResource("RectangleShape2D_ywt8t")
+
+[node name="sling-ani" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_qr26c")

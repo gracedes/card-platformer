@@ -1,223 +1,17 @@
-[gd_scene load_steps=45 format=3 uid="uid://dkpvywtxiqlka"]
+[gd_scene load_steps=9 format=3 uid="uid://dkpvywtxiqlka"]
 
-[ext_resource type="Script" path="res://assets/scripts/player/playerMovement.gd" id="1_0hfq1"]
-[ext_resource type="Texture2D" uid="uid://b2q77i64e7k5s" path="res://assets/sprites/protag/protag-outline-neutral.png" id="1_fdi6q"]
-[ext_resource type="Texture2D" uid="uid://bkobcb7njjasw" path="res://assets/sprites/protag/run/protag-outline-run-1.png" id="2_ld4re"]
-[ext_resource type="Texture2D" uid="uid://beo872mt2js7a" path="res://assets/sprites/protag/protag-outline-neutral2.png" id="2_rtbk5"]
-[ext_resource type="Texture2D" uid="uid://ccyhwciapto6g" path="res://assets/sprites/protag/jump/protag-outline-jump-up.png" id="2_vfjtd"]
-[ext_resource type="Texture2D" uid="uid://c3tehk3fekxch" path="res://assets/sprites/protag/run/protag-outline-run-3.png" id="3_wssco"]
-[ext_resource type="Texture2D" uid="uid://c3qlsflhnmd7i" path="res://assets/sprites/protag/run/protag-outline-run-2.png" id="4_kf7h2"]
+[ext_resource type="PackedScene" uid="uid://dp0ffe2ki7eoj" path="res://assets/prefabs/character_body_2d.tscn" id="1_v4wfn"]
+[ext_resource type="PackedScene" uid="uid://b4uib1ggwd7vg" path="res://assets/prefabs/cards.tscn" id="8_4ac8j"]
 [ext_resource type="PackedScene" uid="uid://bpru5ee2dc6ha" path="res://assets/prefabs/blocks/wall.tscn" id="8_qdtig"]
-[ext_resource type="Texture2D" uid="uid://kjn2dx0asb5l" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0000_Layer-13.png" id="8_ystd7"]
-[ext_resource type="Texture2D" uid="uid://drr0tpxck5yss" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0001_Layer-12.png" id="9_ecvho"]
 [ext_resource type="PackedScene" uid="uid://1s7tuval67dj" path="res://assets/prefabs/blocks/inner-corner.tscn" id="9_wgccn"]
 [ext_resource type="PackedScene" uid="uid://bx7r3asko0vwd" path="res://assets/prefabs/blocks/corner.tscn" id="10_8b5ny"]
-[ext_resource type="Texture2D" uid="uid://bx28du3cub5ky" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0002_Layer-11.png" id="10_qloq0"]
-[ext_resource type="Texture2D" uid="uid://ds303rpn0q10w" path="res://assets/sprites/cards/card-1.png" id="11_8en4c"]
-[ext_resource type="Texture2D" uid="uid://wsco38t22oct" path="res://assets/sprites/white.png" id="11_md5td"]
-[ext_resource type="Script" path="res://assets/scripts/card-script3.gd" id="11_n1rr0"]
-[ext_resource type="Texture2D" uid="uid://bx5ry0ssbc6vs" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0003_Layer-10.png" id="11_yj340"]
-[ext_resource type="Script" path="res://assets/scripts/card-script2.gd" id="12_aii4r"]
-[ext_resource type="Texture2D" uid="uid://d2dcdmoevfxrx" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0004_Layer-9.png" id="12_hhf6g"]
-[ext_resource type="Texture2D" uid="uid://bm6odtgtssjpa" path="res://assets/sprites/cards/card-3.png" id="12_oujwr"]
-[ext_resource type="Texture2D" uid="uid://cx7vj3vw8tlkv" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0005_Layer-8.png" id="13_omp4w"]
-[ext_resource type="Texture2D" uid="uid://dtyyqtdb258m2" path="res://assets/sprites/cards/card-2.png" id="13_x07hi"]
-[ext_resource type="Texture2D" uid="uid://cd2m14femt2j4" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0006_Layer-7.png" id="14_jg2b7"]
-[ext_resource type="Texture2D" uid="uid://bpweexavhevo2" path="res://assets/sprites/cards/card-0.png" id="14_upc5j"]
-[ext_resource type="Texture2D" uid="uid://f6jm12nbdwus" path="res://assets/sprites/cards/icons/plant-icon.png" id="15_2y64a"]
-[ext_resource type="Texture2D" uid="uid://cgg8i83ju0t8q" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0007_Layer-6.png" id="15_xqjuh"]
-[ext_resource type="Texture2D" uid="uid://dk8s140vs56sm" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0008_Layer-5.png" id="16_rxb8r"]
-[ext_resource type="Texture2D" uid="uid://cqyto6cfouhhs" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0009_Layer-4.png" id="17_4xa3a"]
-[ext_resource type="Script" path="res://assets/scripts/card-script1.gd" id="17_07l2n"]
-[ext_resource type="Texture2D" uid="uid://cer5jmtjs5dw0" path="res://assets/sprites/cards/icons/slingshot-icon.png" id="18_1rjha"]
-[ext_resource type="Script" path="res://scenes/card-script5.gd" id="18_2y71i"]
-[ext_resource type="Texture2D" uid="uid://1cdrt80urmoy" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0010_Layer-3.png" id="18_gxd3f"]
-[ext_resource type="Texture2D" uid="uid://dm7eygmdfw2ef" path="res://assets/sprites/cards/icons/wave-icon.png" id="18_qn3hr"]
-[ext_resource type="Texture2D" uid="uid://c31xg6k56oej3" path="res://assets/sprites/cards/icons/cloud-icon.png" id="19_fate4"]
-[ext_resource type="Texture2D" uid="uid://bsny2qt7x8qbq" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0011_Layer-2.png" id="19_n5moq"]
-[ext_resource type="Texture2D" uid="uid://blhg3diqpt3h4" path="res://assets/sprites/ability-animations/sling-ani/sling-ani_0012_Layer-1.png" id="20_5y5r6"]
 [ext_resource type="PackedScene" uid="uid://b4rfphb3mp1f6" path="res://assets/prefabs/blocks/spikes.tscn" id="24_tsowb"]
 [ext_resource type="PackedScene" uid="uid://b1s1mi1vqntsc" path="res://assets/prefabs/blocks/pixel.tscn" id="25_0ajdj"]
-[ext_resource type="Script" path="res://assets/scripts/card-script4.gd" id="31_3ymle"]
-[ext_resource type="Texture2D" uid="uid://bf10mwk0yhx68" path="res://assets/sprites/cards/icons/fire-icon.png" id="32_05met"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_2ye3r"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_vfjtd")
-}],
-"loop": true,
-"name": &"jump",
-"speed": 0.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("1_fdi6q")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_rtbk5")
-}],
-"loop": true,
-"name": &"neutral",
-"speed": 0.5
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_ld4re")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_wssco")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_ld4re")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_kf7h2")
-}],
-"loop": true,
-"name": &"run",
-"speed": 7.0
-}]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ywt8t"]
-size = Vector2(12.9162, 30.3358)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_qr26c"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("8_ystd7")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_ecvho")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_qloq0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_yj340")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_hhf6g")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_omp4w")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_jg2b7")
-}, {
-"duration": 1.0,
-"texture": ExtResource("15_xqjuh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_rxb8r")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_4xa3a")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_gxd3f")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_n5moq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_5y5r6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_n5moq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_gxd3f")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_4xa3a")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_rxb8r")
-}, {
-"duration": 1.0,
-"texture": ExtResource("15_xqjuh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_jg2b7")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_omp4w")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_hhf6g")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_yj340")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_qloq0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_ecvho")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_ystd7")
-}],
-"loop": true,
-"name": &"default",
-"speed": 24.0
-}]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_nkth3"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("11_8en4c")
-}],
-"loop": true,
-"name": &"one",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("12_oujwr")
-}],
-"loop": true,
-"name": &"three",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("13_x07hi")
-}],
-"loop": true,
-"name": &"two",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("14_upc5j")
-}],
-"loop": true,
-"name": &"zero",
-"speed": 5.0
-}]
+[ext_resource type="PackedScene" uid="uid://dr50o8h1js5ot" path="res://assets/prefabs/blocks/crate.tscn" id="25_1ya1j"]
 
 [node name="root" type="Node2D"]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-position = Vector2(-130, 32)
-script = ExtResource("1_0hfq1")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
-sprite_frames = SubResource("SpriteFrames_2ye3r")
-animation = &"neutral"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(4.20477, -0.160004)
-scale = Vector2(1.735, 1.45)
-shape = SubResource("RectangleShape2D_ywt8t")
-
-[node name="sling-ani" type="AnimatedSprite2D" parent="CharacterBody2D"]
-sprite_frames = SubResource("SpriteFrames_qr26c")
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_v4wfn")]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
@@ -265,73 +59,16 @@ position = Vector2(92, 69)
 [node name="spike" parent="platform" instance=ExtResource("24_tsowb")]
 position = Vector2(32, -21)
 
+[node name="StaticBody2D12" parent="platform" instance=ExtResource("25_1ya1j")]
+position = Vector2(92, 9)
+
+[node name="StaticBody2D13" parent="platform" instance=ExtResource("25_1ya1j")]
+position = Vector2(92, -51)
+
+[node name="StaticBody2D14" parent="platform" instance=ExtResource("25_1ya1j")]
+position = Vector2(92, -21)
+
 [node name="pixel" parent="platform" instance=ExtResource("25_0ajdj")]
 position = Vector2(48, -6)
 
-[node name="cards" type="Node2D" parent="."]
-
-[node name="Sprite2D" type="Sprite2D" parent="cards"]
-z_index = 1
-position = Vector2(0, 156.9)
-scale = Vector2(16.27, 6.64)
-texture = ExtResource("11_md5td")
-
-[node name="card3" type="Node2D" parent="cards"]
-z_index = 2
-position = Vector2(0, 156.9)
-script = ExtResource("11_n1rr0")
-
-[node name="outline" type="AnimatedSprite2D" parent="cards/card3"]
-sprite_frames = SubResource("SpriteFrames_nkth3")
-animation = &"three"
-
-[node name="icon" type="Sprite2D" parent="cards/card3"]
-texture = ExtResource("15_2y64a")
-
-[node name="card4" type="Node2D" parent="cards"]
-z_index = 2
-position = Vector2(70, 156.9)
-script = ExtResource("31_3ymle")
-
-[node name="outline" type="AnimatedSprite2D" parent="cards/card4"]
-sprite_frames = SubResource("SpriteFrames_nkth3")
-animation = &"three"
-
-[node name="icon" type="Sprite2D" parent="cards/card4"]
-texture = ExtResource("32_05met")
-
-[node name="card5" type="Node2D" parent="cards"]
-z_index = 2
-position = Vector2(140, 156.9)
-script = ExtResource("18_2y71i")
-
-[node name="outline" type="AnimatedSprite2D" parent="cards/card5"]
-sprite_frames = SubResource("SpriteFrames_nkth3")
-animation = &"three"
-
-[node name="icon" type="Sprite2D" parent="cards/card5"]
-texture = ExtResource("18_1rjha")
-
-[node name="card2" type="Node2D" parent="cards"]
-z_index = 2
-position = Vector2(-70, 156.9)
-script = ExtResource("12_aii4r")
-
-[node name="outline" type="AnimatedSprite2D" parent="cards/card2"]
-sprite_frames = SubResource("SpriteFrames_nkth3")
-animation = &"three"
-
-[node name="icon" type="Sprite2D" parent="cards/card2"]
-texture = ExtResource("18_qn3hr")
-
-[node name="card1" type="Node2D" parent="cards"]
-z_index = 2
-position = Vector2(-140, 156.9)
-script = ExtResource("17_07l2n")
-
-[node name="outline" type="AnimatedSprite2D" parent="cards/card1"]
-sprite_frames = SubResource("SpriteFrames_nkth3")
-animation = &"three"
-
-[node name="icon" type="Sprite2D" parent="cards/card1"]
-texture = ExtResource("19_fate4")
+[node name="cards" parent="." instance=ExtResource("8_4ac8j")]

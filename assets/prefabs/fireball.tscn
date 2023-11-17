@@ -41,7 +41,7 @@ animation = &"flame"
 frame_progress = 0.0106641
 offset = Vector2(-7.9, 0)
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." groups=["fireballs"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 scale = Vector2(0.545, 0.545)

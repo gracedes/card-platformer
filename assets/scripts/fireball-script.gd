@@ -10,6 +10,7 @@ var flame_speed = Vector2(200.0, 0.0)
 
 @onready var _animated_sprite = $AnimatedSprite2D
 @onready var _2d_sprite = $Sprite2D
+@onready var _area = $Area2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -30,3 +31,10 @@ func _process(delta):
 	if rot_count > rot_time:
 		_2d_sprite.rotate(PI / 2)
 		rot_count = 0
+		
+	var walls = get_tree().get_nodes_in_group("wall")
+	
+	for wall in walls:
+		if _area.overlaps_area(wall):
+			queue_free()
+
