@@ -1,0 +1,46 @@
+[gd_scene load_steps=8 format=3 uid="uid://dufbqlvidq3nr"]
+
+[ext_resource type="Texture2D" uid="uid://b8yg67xg7cwld" path="res://assets/sprites/ability-animations/wave-ani/wave-ani_0003_Layer-7-copy.png" id="2_wrmdr"]
+[ext_resource type="Texture2D" uid="uid://chxp332rki27p" path="res://assets/sprites/ability-animations/wave-ani/wave-ani_0006_Layer-6.png" id="4_ko8bl"]
+[ext_resource type="Texture2D" uid="uid://bi0h401q0wv86" path="res://assets/sprites/ability-animations/wave-ani/wave-ani_0001_Layer-8.png" id="5_3lxo2"]
+[ext_resource type="Texture2D" uid="uid://isnp0i7mmsuc" path="res://assets/sprites/ability-animations/wave-ani/wave-ani_0000_Layer-9.png" id="6_5vtrr"]
+[ext_resource type="Texture2D" uid="uid://bomwoxx1jtq8q" path="res://assets/sprites/ability-animations/wave-ani/wave-ani_0004_Layer-10.png" id="7_jv7qd"]
+[ext_resource type="Script" path="res://assets/scripts/wave-ani-script.gd" id="8_b0e2a"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7kf6f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_wrmdr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ko8bl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_3lxo2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_3lxo2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5vtrr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5vtrr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_jv7qd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_jv7qd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+position = Vector2(-91, -20)
+sprite_frames = SubResource("SpriteFrames_7kf6f")
+frame_progress = 0.327481
+script = ExtResource("8_b0e2a")
