@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://f6jm12nbdwus" path="res://assets/sprites/cards/icons/plant-icon.png" id="7_rfngi"]
 [ext_resource type="Script" path="res://assets/scripts/card-script4.gd" id="8_htwp5"]
 [ext_resource type="Texture2D" uid="uid://bf10mwk0yhx68" path="res://assets/sprites/cards/icons/fire-icon.png" id="9_8x2ma"]
-[ext_resource type="Script" path="res://scenes/card-script5.gd" id="10_bluds"]
+[ext_resource type="Script" path="res://assets/scripts/card-script5.gd" id="10_77u0a"]
 [ext_resource type="Texture2D" uid="uid://cer5jmtjs5dw0" path="res://assets/sprites/cards/icons/slingshot-icon.png" id="11_7o3qv"]
 [ext_resource type="Script" path="res://assets/scripts/card-script2.gd" id="12_1arig"]
 [ext_resource type="Texture2D" uid="uid://dm7eygmdfw2ef" path="res://assets/sprites/cards/icons/wave-icon.png" id="13_ra6d4"]
@@ -86,7 +86,7 @@ texture = ExtResource("9_8x2ma")
 [node name="card5" type="Node2D" parent="."]
 z_index = 2
 position = Vector2(140, 156.9)
-script = ExtResource("10_bluds")
+script = ExtResource("10_77u0a")
 
 [node name="outline" type="AnimatedSprite2D" parent="card5"]
 sprite_frames = SubResource("SpriteFrames_nkth3")

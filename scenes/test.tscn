@@ -1,10 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://dkpvywtxiqlka"]
+[gd_scene load_steps=11 format=3 uid="uid://dkpvywtxiqlka"]
 
 [ext_resource type="PackedScene" uid="uid://dp0ffe2ki7eoj" path="res://assets/prefabs/character_body_2d.tscn" id="1_v4wfn"]
 [ext_resource type="PackedScene" uid="uid://b4uib1ggwd7vg" path="res://assets/prefabs/cards.tscn" id="8_4ac8j"]
 [ext_resource type="PackedScene" uid="uid://bpru5ee2dc6ha" path="res://assets/prefabs/blocks/wall.tscn" id="8_qdtig"]
+[ext_resource type="PackedScene" uid="uid://5hmiuh15ioqw" path="res://assets/prefabs/screen-changer.tscn" id="9_35p2r"]
 [ext_resource type="PackedScene" uid="uid://1s7tuval67dj" path="res://assets/prefabs/blocks/inner-corner.tscn" id="9_wgccn"]
 [ext_resource type="PackedScene" uid="uid://bx7r3asko0vwd" path="res://assets/prefabs/blocks/corner.tscn" id="10_8b5ny"]
+[ext_resource type="PackedScene" uid="uid://sadk1wouahhk" path="res://assets/prefabs/barrier.tscn" id="10_od5dq"]
 [ext_resource type="PackedScene" uid="uid://b4rfphb3mp1f6" path="res://assets/prefabs/blocks/spikes.tscn" id="24_tsowb"]
 [ext_resource type="PackedScene" uid="uid://b1s1mi1vqntsc" path="res://assets/prefabs/blocks/pixel.tscn" id="25_0ajdj"]
 [ext_resource type="PackedScene" uid="uid://dr50o8h1js5ot" path="res://assets/prefabs/blocks/crate.tscn" id="25_1ya1j"]
@@ -72,3 +74,7 @@ position = Vector2(92, -21)
 position = Vector2(48, -6)
 
 [node name="cards" parent="." instance=ExtResource("8_4ac8j")]
+
+[node name="Area2D" parent="." instance=ExtResource("9_35p2r")]
+
+[node name="StaticBody2D" parent="." instance=ExtResource("10_od5dq")]

@@ -1,13 +1,6 @@
+res://assets/prefabs/cards.tscn
+res://scenes/screen1-1.tscn
 res://scenes/test.tscn
-res://assets/prefabs/blocks/crate.tscn
-res://assets/prefabs/fireball.tscn
-res://assets/scripts/crate-script.gd
+res://assets/scripts/Area2D.gd
 res://assets/prefabs/blocks/spikes.tscn
-res://assets/scripts/fireball-script.gd
-res://assets/prefabs/blocks/corner.tscn
 res://assets/prefabs/blocks/inner-corner.tscn
-res://assets/prefabs/blocks/wall.tscn
-res://assets/prefabs/blocks/pillar.tscn
-res://assets/prefabs/blocks/pillar-end.tscn
-res://assets/scripts/player/playerMovement.gd
-res://assets/prefabs/character_body_2d.tscn
