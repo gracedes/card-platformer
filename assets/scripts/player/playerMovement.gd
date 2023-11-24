@@ -13,6 +13,7 @@ var PLANT_VELOCITY = -600.0
 @onready var cloud_prefab = preload("res://assets/prefabs/cloud.tscn")
 @onready var fire_prefab = preload("res://assets/prefabs/fireball.tscn")
 @onready var wave_prefab = preload("res://assets/prefabs/wave-ani.tscn")
+@onready var plant_prefab = preload("res://assets/prefabs/plant-ani.tscn")
 var mid_sling = false
 var sling_time = 1.0
 var sling_count = 0.0
@@ -113,6 +114,16 @@ func wave_ability(delta):
 func plant_ability(delta):
 	num_plant -= 1
 	velocity.y = PLANT_VELOCITY
+	
+	var plant_obj = plant_prefab.instantiate()
+	plant_obj.position.x = self.position.x
+	if _animated_sprite.flip_h == true:
+		plant_obj.position.x -= 3
+		plant_obj.flip_h = true
+	else:
+		plant_obj.position.x += 3
+	plant_obj.position.y = self.position.y + 3
+	root.add_child((plant_obj))
 	
 func fire_ability(delta):
 	num_fire -= 1

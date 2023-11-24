@@ -1,0 +1,90 @@
+[gd_scene load_steps=13 format=3 uid="uid://beifstmer8woj"]
+
+[ext_resource type="Texture2D" uid="uid://blygs8ceouny2" path="res://assets/sprites/ability-animations/plant-ani/plant-ani_0009_Layer-1.png" id="1_j73ll"]
+[ext_resource type="Texture2D" uid="uid://d00ehwiem83an" path="res://assets/sprites/ability-animations/plant-ani/plant-ani_0008_Layer-2.png" id="2_8y4a6"]
+[ext_resource type="Texture2D" uid="uid://2q3j7duoy5an" path="res://assets/sprites/ability-animations/plant-ani/plant-ani_0007_Layer-3.png" id="3_qok5x"]
+[ext_resource type="Texture2D" uid="uid://bf8j3tiix8edk" path="res://assets/sprites/ability-animations/plant-ani/plant-ani_0006_Layer-3-copy.png" id="4_junc8"]
+[ext_resource type="Texture2D" uid="uid://dahura10kqcbp" path="res://assets/sprites/ability-animations/plant-ani/plant-ani_0005_Layer-4.png" id="5_lu2ov"]
+[ext_resource type="Texture2D" uid="uid://6si10xas04qx" path="res://assets/sprites/ability-animations/plant-ani/plant-ani_0004_Layer-4-copy.png" id="6_eb365"]
+[ext_resource type="Texture2D" uid="uid://6r3fwl6rxv35" path="res://assets/sprites/ability-animations/plant-ani/plant-ani_0003_Layer-4-copy-2.png" id="7_32kbf"]
+[ext_resource type="Texture2D" uid="uid://bl27tsnbop2ec" path="res://assets/sprites/ability-animations/plant-ani/plant-ani_0002_Layer-4-copy-3.png" id="8_mipmq"]
+[ext_resource type="Texture2D" uid="uid://cx55moesgjnvh" path="res://assets/sprites/ability-animations/plant-ani/plant-ani_0001_Layer-4-copy-4.png" id="9_0t01u"]
+[ext_resource type="Texture2D" uid="uid://dn45hjxde0df3" path="res://assets/sprites/ability-animations/plant-ani/plant-ani_0000_Layer-4-copy-5.png" id="10_7k6jy"]
+[ext_resource type="Script" path="res://assets/scripts/plant-ani.gd" id="11_8d3f2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yxxmg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_j73ll")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_8y4a6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qok5x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_junc8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_lu2ov")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_eb365")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_32kbf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_mipmq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_0t01u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_0t01u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_7k6jy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_7k6jy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_7k6jy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_7k6jy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_7k6jy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_7k6jy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_7k6jy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_7k6jy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_7k6jy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_7k6jy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_7k6jy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 50.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+position = Vector2(-91, -20)
+sprite_frames = SubResource("SpriteFrames_yxxmg")
+frame_progress = 0.346495
+script = ExtResource("11_8d3f2")
