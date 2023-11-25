@@ -101,6 +101,7 @@ func wave_ability(delta):
 		velocity.x -= WAVE_VELOCITY
 	else:
 		velocity.x += WAVE_VELOCITY
+	velocity.y = 0
 	var wave_obj = wave_prefab.instantiate()
 	wave_obj.position.x = self.position.x
 	if _animated_sprite.flip_h == true:

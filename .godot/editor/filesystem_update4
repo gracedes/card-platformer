@@ -1,5 +1,4 @@
-res://assets/prefabs/plant-ani.tscn
-res://assets/scripts/Area2D.gd
 res://scenes/test.tscn
-res://assets/scripts/plant-ani.gd
+res://assets/scripts/Area2D.gd
+res://assets/prefabs/plant-ani.tscn
 res://assets/scripts/player/playerMovement.gd
