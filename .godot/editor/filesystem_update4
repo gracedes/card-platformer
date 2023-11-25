@@ -1,4 +1,3 @@
-res://scenes/test.tscn
+res://assets/prefabs/blocks/full-square.tscn
 res://assets/scripts/Area2D.gd
-res://assets/prefabs/plant-ani.tscn
-res://assets/scripts/player/playerMovement.gd
+res://scenes/screen7-5.tscn

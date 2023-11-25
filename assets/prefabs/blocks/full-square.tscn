@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7huxev3vc2qx"]
+
+[ext_resource type="Texture2D" uid="uid://ba5o0fwgepkk7" path="res://assets/sprites/blocks/full-square.png" id="1_jc84w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qe4lo"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+rotation = 1.5708
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_jc84w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1.5, 1.5)
+shape = SubResource("RectangleShape2D_qe4lo")
+
+[node name="Area2D" type="Area2D" parent="." groups=["wall"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(1.5, 1.5)
+shape = SubResource("RectangleShape2D_qe4lo")
