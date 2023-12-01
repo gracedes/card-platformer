@@ -1,0 +1,57 @@
+[gd_scene load_steps=8 format=3 uid="uid://c8wwkipwqwxnv"]
+
+[ext_resource type="PackedScene" uid="uid://dp0ffe2ki7eoj" path="res://assets/prefabs/character_body_2d.tscn" id="1_uvu3o"]
+[ext_resource type="PackedScene" uid="uid://sadk1wouahhk" path="res://assets/prefabs/barrier.tscn" id="2_02hww"]
+[ext_resource type="PackedScene" uid="uid://bpru5ee2dc6ha" path="res://assets/prefabs/blocks/wall.tscn" id="3_0jbv1"]
+[ext_resource type="PackedScene" uid="uid://bx7r3asko0vwd" path="res://assets/prefabs/blocks/corner.tscn" id="4_rnvbg"]
+[ext_resource type="PackedScene" uid="uid://b4uib1ggwd7vg" path="res://assets/prefabs/cards.tscn" id="5_6h0k2"]
+[ext_resource type="PackedScene" uid="uid://1s7tuval67dj" path="res://assets/prefabs/blocks/inner-corner.tscn" id="5_el7f5"]
+[ext_resource type="PackedScene" uid="uid://5hmiuh15ioqw" path="res://assets/prefabs/screen-changer.tscn" id="6_qgo5e"]
+
+[node name="root" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_uvu3o")]
+position = Vector2(-297, 69)
+num_cloud = 0
+num_wave = 0
+num_plant = 1
+num_fire = 0
+num_sling = 0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("2_02hww")]
+position = Vector2(-8, -336)
+rotation = 1.5708
+
+[node name="platform" type="Node2D" parent="."]
+
+[node name="StaticBody2D" parent="platform" instance=ExtResource("3_0jbv1")]
+position = Vector2(-141, 105)
+scale = Vector2(1, 12.62)
+
+[node name="StaticBody2D2" parent="platform" instance=ExtResource("4_rnvbg")]
+position = Vector2(63, -87)
+rotation = 0.0
+
+[node name="StaticBody2D3" parent="platform" instance=ExtResource("3_0jbv1")]
+position = Vector2(63, 9)
+rotation = 0.0
+scale = Vector2(1, 5.42)
+
+[node name="StaticBody2D4" parent="platform" instance=ExtResource("5_el7f5")]
+position = Vector2(63, 105)
+rotation = 0.0
+
+[node name="StaticBody2D5" parent="platform" instance=ExtResource("3_0jbv1")]
+position = Vector2(222, -87)
+scale = Vector2(1, 9.625)
+
+[node name="cards" parent="." instance=ExtResource("5_6h0k2")]
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_02hww")]
+
+[node name="Area2D" parent="." instance=ExtResource("6_qgo5e")]
+position = Vector2(323, -227)
+scale = Vector2(1, 20.21)
+next = "res://scenes/screen4-2.tscn"

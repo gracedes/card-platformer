@@ -22,6 +22,7 @@ DiscordSDKLoader="*res://addons/discord-sdk-gd/nodes/core_updater.gd"
 
 window/size/viewport_width=630
 window/size/viewport_height=550
+window/size/mode=2
 window/stretch/mode="viewport"
 window/icon="res://icon.svg"
 

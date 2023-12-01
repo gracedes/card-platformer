@@ -169,4 +169,4 @@ rotation = 3.14159
 [node name="Area2D" parent="." instance=ExtResource("10_fyumv")]
 position = Vector2(323, -332)
 scale = Vector2(1, 19.945)
-next = "res://scenes/screen7-1.tscn"
+next = "res://scenes/screen6-4.tscn"
