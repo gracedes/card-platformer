@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1701455528
+::res://::1701460269
 ::res://addons/::1698351255
 ::res://addons/discord-sdk-gd/::1698351464
 Debug.svg::CompressedTexture2D::1414570589633831756::1698351464::1698351464::1::::<><>::
@@ -22,7 +22,14 @@ Checked.svg::CompressedTexture2D::8083066295081234619::1698351464::1698351464::1
 circle.svg::CompressedTexture2D::8498865176304625629::1698351464::1698351464::1::::<><>::
 Unchecked.svg::CompressedTexture2D::5781190569803204660::1698351464::1698351464::1::::<><>::
 ::res://assets/::1700797522
-::res://assets/branding/::1700800367
+::res://assets/branding/::1701461273
+logo.png::CompressedTexture2D::291692569155944140::1701456776::1701456777::1::::<><>::
+logoGBG.png::CompressedTexture2D::8059045930062642544::1701461273::1701461284::1::::<><>::
+start_0000_Layer-7.png::CompressedTexture2D::1339242842332590706::1701456908::1701456918::1::::<><>::
+start_0001_Layer-3-copy.png::CompressedTexture2D::1650881923419704029::1701456909::1701456918::1::::<><>::
+start_0002_Layer-3.png::CompressedTexture2D::7686771396385302877::1701456911::1701456918::1::::<><>::
+start_0003_Layer-9.png::CompressedTexture2D::6242048871707576692::1701456912::1701456918::1::::<><>::
+start_0004_Layer-8.png::CompressedTexture2D::8631996321666516307::1701456913::1701456918::1::::<><>::
 ::res://assets/prefabs/::1701451279
 barrier.tscn::PackedScene::1263600594657563156::1701451279::0::1::::<><>::
 cards.tscn::PackedScene::4463673601191370120::1701451279::0::1::::<><>::uid://wsco38t22oct
@@ -42,7 +49,7 @@ pillar.tscn::PackedScene::9180091685599058769::1700256411::0::1::::<><>::uid://v
 pixel.tscn::PackedScene::4250089950521580602::1699724562::0::1::::<><>::uid://dlbr4k6oc1d4e
 spikes.tscn::PackedScene::4457322313384565289::1701451279::0::1::::<><>::res://assets/scripts/spikescript.gd<>uid://qqshbppk8cnu
 wall.tscn::PackedScene::3475615891258577546::1700256411::0::1::::<><>::uid://bxn3qru8nvii3
-::res://assets/scripts/::1701451414
+::res://assets/scripts/::1701460093
 Area2D.gd::GDScript::-1::1701451414::0::1::::<>Area2D<>::
 card-script1.gd::GDScript::-1::1699117066::0::1::::<>Node2D<>::
 card-script2.gd::GDScript::-1::1699117066::0::1::::<>Node2D<>::
@@ -52,6 +59,7 @@ card-script5.gd::GDScript::-1::1699640337::0::1::::<>Node2D<>::
 crate-script.gd::GDScript::-1::1701451279::0::1::::<>StaticBody2D<>::
 fireball-script.gd::GDScript::-1::1700256789::0::1::::<>Node2D<>::
 plant-ani.gd::GDScript::-1::1700795567::0::1::::<>AnimatedSprite2D<>::
+startScript.gd::GDScript::-1::1701460093::0::1::::<>Node2D<>::
 spikescript.gd::GDScript::-1::1699725784::0::1::::<>StaticBody2D<>::
 wave-ani-script.gd::GDScript::-1::1700606253::0::1::::<>AnimatedSprite2D<>::
 ::res://assets/scripts/player/::1701451279
@@ -140,9 +148,10 @@ protag-outline-run-3.png::CompressedTexture2D::6777608103827611991::1697297381::
 ::res://assets/sprites/skeledog/::1699114490
 skeledog2.png::CompressedTexture2D::7762162313883802244::1699112627::1699114490::1::::<><>::
 skeledog.png::CompressedTexture2D::4363226518176680417::1699112141::1699114490::1::::<><>::
-::res://scenes/::1701455528
-screen4-1.tscn::PackedScene::7135843594191216859::1701455443::0::1::::<><>::uid://dp0ffe2ki7eoj::::res://assets/prefabs/character_body_2d.tscn<>uid://sadk1wouahhk::::res://assets/prefabs/barrier.tscn<>uid://bpru5ee2dc6ha::::res://assets/prefabs/blocks/wall.tscn<>uid://bx7r3asko0vwd::::res://assets/prefabs/blocks/corner.tscn<>uid://b4rfphb3mp1f6::::res://assets/prefabs/blocks/spikes.tscn<>uid://b4uib1ggwd7vg::::res://assets/prefabs/cards.tscn<>uid://5hmiuh15ioqw::::res://assets/prefabs/screen-changer.tscn
-screen4-3.tscn::PackedScene::5074508793540342320::1701455410::0::1::::<><>::uid://dp0ffe2ki7eoj::::res://assets/prefabs/character_body_2d.tscn<>uid://sadk1wouahhk::::res://assets/prefabs/barrier.tscn<>uid://bpru5ee2dc6ha::::res://assets/prefabs/blocks/wall.tscn<>uid://bx7r3asko0vwd::::res://assets/prefabs/blocks/corner.tscn<>uid://b4rfphb3mp1f6::::res://assets/prefabs/blocks/spikes.tscn<>uid://b4uib1ggwd7vg::::res://assets/prefabs/cards.tscn<>uid://5hmiuh15ioqw::::res://assets/prefabs/screen-changer.tscn
+::res://scenes/::1701460298
+title.tscn::PackedScene::3900206220234814533::1701460298::0::1::::<><>::uid://du8nyok1t65sp::::res://assets/branding/start_0004_Layer-8.png<>uid://efkes5viyqbk::::res://assets/branding/logo.png<>res://assets/scripts/startScript.gd<>uid://cu6xvrxfsof8o::::res://assets/branding/start_0003_Layer-9.png<>uid://tc0es3wypgqc::::res://assets/branding/start_0000_Layer-7.png<>uid://dhrsaceumht2d::::res://assets/branding/start_0002_Layer-3.png<>uid://xrx1wns2sain::::res://assets/branding/start_0001_Layer-3-copy.png
+screen4-1.tscn::PackedScene::7135843594191216859::1701460298::0::1::::<><>::uid://dp0ffe2ki7eoj::::res://assets/prefabs/character_body_2d.tscn<>uid://sadk1wouahhk::::res://assets/prefabs/barrier.tscn<>uid://bpru5ee2dc6ha::::res://assets/prefabs/blocks/wall.tscn<>uid://bx7r3asko0vwd::::res://assets/prefabs/blocks/corner.tscn<>uid://b4uib1ggwd7vg::::res://assets/prefabs/cards.tscn<>uid://1s7tuval67dj::::res://assets/prefabs/blocks/inner-corner.tscn<>uid://5hmiuh15ioqw::::res://assets/prefabs/screen-changer.tscn
+screen4-2.tscn::PackedScene::5074508793540342320::1701455410::0::1::::<><>::uid://dp0ffe2ki7eoj::::res://assets/prefabs/character_body_2d.tscn<>uid://sadk1wouahhk::::res://assets/prefabs/barrier.tscn<>uid://bpru5ee2dc6ha::::res://assets/prefabs/blocks/wall.tscn<>uid://bx7r3asko0vwd::::res://assets/prefabs/blocks/corner.tscn<>uid://b4rfphb3mp1f6::::res://assets/prefabs/blocks/spikes.tscn<>uid://b4uib1ggwd7vg::::res://assets/prefabs/cards.tscn<>uid://5hmiuh15ioqw::::res://assets/prefabs/screen-changer.tscn
 screen5-1.tscn::PackedScene::6838705274678555211::1701454320::0::1::::<><>::uid://dp0ffe2ki7eoj::::res://assets/prefabs/character_body_2d.tscn<>uid://sadk1wouahhk::::res://assets/prefabs/barrier.tscn<>uid://bpru5ee2dc6ha::::res://assets/prefabs/blocks/wall.tscn<>uid://c5y3cujcwjg04::::res://assets/prefabs/blocks/pillar-end.tscn<>uid://dr50o8h1js5ot::::res://assets/prefabs/blocks/crate.tscn<>uid://b4uib1ggwd7vg::::res://assets/prefabs/cards.tscn<>uid://5hmiuh15ioqw::::res://assets/prefabs/screen-changer.tscn<>uid://d3151e1ichxin::::res://assets/prefabs/blocks/pillar.tscn
 screen5-2.tscn::PackedScene::5707465193666549832::1701454042::0::1::::<><>::uid://dp0ffe2ki7eoj::::res://assets/prefabs/character_body_2d.tscn<>uid://sadk1wouahhk::::res://assets/prefabs/barrier.tscn<>uid://bpru5ee2dc6ha::::res://assets/prefabs/blocks/wall.tscn<>uid://bx7r3asko0vwd::::res://assets/prefabs/blocks/corner.tscn<>uid://b4uib1ggwd7vg::::res://assets/prefabs/cards.tscn<>uid://dr50o8h1js5ot::::res://assets/prefabs/blocks/crate.tscn<>uid://5hmiuh15ioqw::::res://assets/prefabs/screen-changer.tscn
 screen6-1.tscn::PackedScene::2053433319753827187::1701451414::0::1::::<><>::uid://dp0ffe2ki7eoj::::res://assets/prefabs/character_body_2d.tscn<>uid://sadk1wouahhk::::res://assets/prefabs/barrier.tscn<>uid://bx7r3asko0vwd::::res://assets/prefabs/blocks/corner.tscn<>uid://bpru5ee2dc6ha::::res://assets/prefabs/blocks/wall.tscn<>uid://b4uib1ggwd7vg::::res://assets/prefabs/cards.tscn<>uid://5hmiuh15ioqw::::res://assets/prefabs/screen-changer.tscn

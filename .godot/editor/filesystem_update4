@@ -7,3 +7,5 @@ res://scenes/screen5-2.tscn
 res://scenes/screen5-1.tscn
 res://scenes/screen4-3.tscn
 res://scenes/screen4-1.tscn
+res://scenes/title.tscn
+res://assets/scripts/startScript.gd
