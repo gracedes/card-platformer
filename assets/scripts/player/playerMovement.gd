@@ -169,7 +169,7 @@ func sling_ability(delta):
 		post_sling = post_sling_coefficient
 		
 func check_offscreen():
-	if position.y > 160.0:
+	if position.y > 250.0:
 		get_tree().reload_current_scene()
 
 func _process(_delta):

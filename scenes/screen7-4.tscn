@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://24vava4js8ij"]
+[gd_scene load_steps=13 format=3 uid="uid://24vava4js8ij"]
 
 [ext_resource type="PackedScene" uid="uid://dp0ffe2ki7eoj" path="res://assets/prefabs/character_body_2d.tscn" id="1_hu7fi"]
 [ext_resource type="PackedScene" uid="uid://bpru5ee2dc6ha" path="res://assets/prefabs/blocks/wall.tscn" id="2_4raxh"]
@@ -9,52 +9,55 @@
 [ext_resource type="PackedScene" uid="uid://d3151e1ichxin" path="res://assets/prefabs/blocks/pillar.tscn" id="6_akxsa"]
 [ext_resource type="PackedScene" uid="uid://1s7tuval67dj" path="res://assets/prefabs/blocks/inner-corner.tscn" id="7_imux2"]
 [ext_resource type="PackedScene" uid="uid://c5y3cujcwjg04" path="res://assets/prefabs/blocks/pillar-end.tscn" id="8_aif3w"]
+[ext_resource type="PackedScene" uid="uid://dr50o8h1js5ot" path="res://assets/prefabs/blocks/crate.tscn" id="9_kgvyq"]
+[ext_resource type="PackedScene" uid="uid://sadk1wouahhk" path="res://assets/prefabs/barrier.tscn" id="10_qb4pp"]
+[ext_resource type="PackedScene" uid="uid://5hmiuh15ioqw" path="res://assets/prefabs/screen-changer.tscn" id="11_0cnul"]
 
 [node name="root" type="Node2D"]
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_hu7fi")]
-position = Vector2(-207, -76)
+position = Vector2(-286, 72)
+num_cloud = 0
+num_wave = 1
+num_plant = 2
+num_fire = 1
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="platform" type="Node2D" parent="."]
-position = Vector2(83, -107)
+position = Vector2(32, -24)
+
+[node name="StaticBody2D25" parent="platform" instance=ExtResource("3_s201o")]
+position = Vector2(80, -30)
 
 [node name="StaticBody2D" parent="platform" instance=ExtResource("2_mctwe")]
 position = Vector2(80, 0)
 
-[node name="StaticBody2D" parent="platform/StaticBody2D" instance=ExtResource("3_s201o")]
-position = Vector2(-30, 0.000106812)
-rotation = 0.0
+[node name="StaticBody2D26" parent="platform" instance=ExtResource("3_s201o")]
+position = Vector2(-80, -30)
 
 [node name="StaticBody2D2" parent="platform" instance=ExtResource("2_mctwe")]
 position = Vector2(-80, 0)
 
-[node name="StaticBody2D2" parent="platform/StaticBody2D2" instance=ExtResource("3_s201o")]
-position = Vector2(-30, 0.000106812)
-rotation = 0.0
+[node name="StaticBody2D27" parent="platform" instance=ExtResource("3_s201o")]
+position = Vector2(-1, 50)
 
 [node name="StaticBody2D3" parent="platform" instance=ExtResource("2_mctwe")]
 position = Vector2(0, -80)
 
-[node name="StaticBody2D3" parent="platform/StaticBody2D3" instance=ExtResource("3_s201o")]
-position = Vector2(130, 0.999527)
-rotation = 0.0
+[node name="StaticBody2D28" parent="platform" instance=ExtResource("3_s201o")]
+position = Vector2(0, -110)
 
 [node name="StaticBody2D4" parent="platform" instance=ExtResource("2_mctwe")]
 position = Vector2(0, 80)
 
-[node name="StaticBody2D4" parent="platform/StaticBody2D4" instance=ExtResource("3_s201o")]
-position = Vector2(-190, 0.000686646)
-rotation = 0.0
-
 [node name="StaticBody2D5" parent="platform" instance=ExtResource("2_4raxh")]
-position = Vector2(155, -64)
+position = Vector2(155, -149)
 rotation = 0.0
-scale = Vector2(1, 7.57)
+scale = Vector2(1, 11.62)
 
 [node name="StaticBody2D6" parent="platform" instance=ExtResource("5_bax28")]
-position = Vector2(155, 65)
+position = Vector2(155, 40)
 rotation = -1.5708
 
 [node name="StaticBody2D2" parent="platform/StaticBody2D6" instance=ExtResource("2_4raxh")]
@@ -75,63 +78,94 @@ position = Vector2(0, 30)
 rotation = 0.0
 
 [node name="StaticBody2D8" parent="platform" instance=ExtResource("6_akxsa")]
-position = Vector2(-153, 31)
+position = Vector2(-153, 45)
 rotation = 0.0
 scale = Vector2(1, 11.465)
 
 [node name="StaticBody2D9" parent="platform" instance=ExtResource("5_bax28")]
-position = Vector2(-153, -156)
+position = Vector2(-153, -142)
 
 [node name="StaticBody2D10" parent="platform" instance=ExtResource("7_imux2")]
-position = Vector2(-152, -156)
+position = Vector2(-153, -142)
 rotation = -1.5708
 
 [node name="StaticBody2D11" parent="platform" instance=ExtResource("6_akxsa")]
-position = Vector2(-198, -156)
+position = Vector2(-198, -142)
 scale = Vector2(1, 2)
 
+[node name="StaticBody2D16" parent="platform" instance=ExtResource("8_aif3w")]
+position = Vector2(-243, -142)
+rotation = -1.5708
+
 [node name="StaticBody2D12" parent="platform" instance=ExtResource("3_s201o")]
-position = Vector2(-153, -185)
+position = Vector2(-153, -171)
 
 [node name="StaticBody2D13" parent="platform" instance=ExtResource("3_s201o")]
-position = Vector2(-183, -185)
+position = Vector2(-183, -171)
 
 [node name="StaticBody2D14" parent="platform" instance=ExtResource("3_s201o")]
-position = Vector2(-213, -185)
+position = Vector2(-213, -171)
 
 [node name="StaticBody2D15" parent="platform" instance=ExtResource("3_s201o")]
-position = Vector2(-243, -185)
+position = Vector2(-243, -171)
 
-[node name="StaticBody2D16" parent="platform" instance=ExtResource("8_aif3w")]
-position = Vector2(-243, -155)
+[node name="StaticBody2D29" parent="platform" instance=ExtResource("3_s201o")]
+position = Vector2(-243, -112)
+rotation = -1.5708
+
+[node name="StaticBody2D30" parent="platform" instance=ExtResource("3_s201o")]
+position = Vector2(-212, -112)
+rotation = -1.5708
+
+[node name="StaticBody2D31" parent="platform" instance=ExtResource("3_s201o")]
+position = Vector2(-182, -112)
 rotation = -1.5708
 
 [node name="StaticBody2D17" parent="platform" instance=ExtResource("8_aif3w")]
-position = Vector2(-273, -44.325)
+position = Vector2(-273, -5.325)
 
 [node name="StaticBody2D18" parent="platform" instance=ExtResource("6_akxsa")]
-position = Vector2(-318, -45)
+position = Vector2(-318, -6)
 scale = Vector2(1, 2)
 
 [node name="StaticBody2D19" parent="platform" instance=ExtResource("3_s201o")]
-position = Vector2(-273, -75)
+position = Vector2(-273, -36)
 
 [node name="StaticBody2D20" parent="platform" instance=ExtResource("3_s201o")]
-position = Vector2(-333, -75)
+position = Vector2(-333, -36)
 
 [node name="StaticBody2D21" parent="platform" instance=ExtResource("3_s201o")]
-position = Vector2(-303, -75)
+position = Vector2(-303, -36)
 
 [node name="StaticBody2D22" parent="platform" instance=ExtResource("5_bax28")]
-position = Vector2(-273, 72.245)
+position = Vector2(-273, 132)
 
 [node name="StaticBody2D23" parent="platform" instance=ExtResource("2_4raxh")]
-position = Vector2(-318, 72)
+position = Vector2(-318, 132)
 scale = Vector2(1, 2)
 
 [node name="StaticBody2D24" parent="platform" instance=ExtResource("2_4raxh")]
-position = Vector2(-273, 132)
+position = Vector2(-273, 192)
 rotation = 3.14159
 scale = Vector2(1, 3)
 
+[node name="StaticBody2D32" parent="platform" instance=ExtResource("9_kgvyq")]
+position = Vector2(155, 130)
+
+[node name="StaticBody2D33" parent="platform" instance=ExtResource("9_kgvyq")]
+position = Vector2(155, 100)
+
+[node name="StaticBody2D34" parent="platform" instance=ExtResource("9_kgvyq")]
+position = Vector2(155, 70)
+
 [node name="cards" parent="." instance=ExtResource("5_7r5tg")]
+
+[node name="StaticBody2D" parent="." instance=ExtResource("10_qb4pp")]
+
+[node name="Area2D" parent="." instance=ExtResource("11_0cnul")]
+position = Vector2(324, 77)
+scale = Vector2(1, 4.85)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("10_qb4pp")]
+position = Vector2(-8, -336)
+rotation = 1.5708

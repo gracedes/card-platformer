@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://qqshbppk8cnu" path="res://assets/sprites/blocks/spikes.png" id="1_kyvl0"]
 
 [node name="StaticBody2D" type="StaticBody2D"]
+z_index = 1
 rotation = 1.5708
 script = ExtResource("1_2a2y0")
 

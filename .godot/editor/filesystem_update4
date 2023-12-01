@@ -1,3 +1,14 @@
-res://assets/prefabs/blocks/full-square.tscn
-res://assets/scripts/Area2D.gd
 res://scenes/screen7-5.tscn
+res://assets/scripts/Area2D.gd
+res://assets/prefabs/blocks/spikes.tscn
+res://assets/prefabs/cards.tscn
+res://assets/scripts/player/playerMovement.gd
+res://assets/prefabs/barrier.tscn
+res://assets/prefabs/screen-changer.tscn
+res://scenes/screen7-4.tscn
+res://scenes/screen7-3.tscn
+res://assets/prefabs/blocks/crate.tscn
+res://assets/scripts/crate-script.gd
+res://assets/prefabs/character_body_2d.tscn
+res://scenes/screen7-2.tscn
+res://scenes/screen7-1.tscn

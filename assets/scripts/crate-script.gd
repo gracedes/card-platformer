@@ -3,7 +3,7 @@ extends StaticBody2D
 @onready var _area = $Area2D
 @onready var ani = $AnimatedSprite2D
 @onready var burning = false
-@export var burn_time = 0.5
+@export var burn_time = 0.25
 @onready var burn_count = 0.0
 
 # Called when the node enters the scene tree for the first time.
