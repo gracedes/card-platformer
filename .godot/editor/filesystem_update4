@@ -7,3 +7,8 @@ res://assets/scripts/altar.gd
 res://assets/scripts/crate-script.gd
 res://assets/scripts/endCam.gd
 res://scenes/screen7-4.tscn
+res://scenes/screen3-3.tscn
+res://assets/scripts/screen3-3.gd
+res://assets/prefabs/character_body_2d.tscn
+res://scenes/screen3-2.tscn
+res://scenes/screen3-1.tscn

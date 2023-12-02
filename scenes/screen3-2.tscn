@@ -1,0 +1,123 @@
+[gd_scene load_steps=11 format=3 uid="uid://dv4v6eqfwitvr"]
+
+[ext_resource type="PackedScene" uid="uid://dp0ffe2ki7eoj" path="res://assets/prefabs/character_body_2d.tscn" id="2_r4iol"]
+[ext_resource type="PackedScene" uid="uid://sadk1wouahhk" path="res://assets/prefabs/barrier.tscn" id="3_5ls1b"]
+[ext_resource type="PackedScene" uid="uid://bx7r3asko0vwd" path="res://assets/prefabs/blocks/corner.tscn" id="4_bs7pq"]
+[ext_resource type="PackedScene" uid="uid://b4rfphb3mp1f6" path="res://assets/prefabs/blocks/spikes.tscn" id="5_pcc0p"]
+[ext_resource type="PackedScene" uid="uid://bpru5ee2dc6ha" path="res://assets/prefabs/blocks/wall.tscn" id="5_tugxq"]
+[ext_resource type="PackedScene" uid="uid://1s7tuval67dj" path="res://assets/prefabs/blocks/inner-corner.tscn" id="6_o6w1q"]
+[ext_resource type="PackedScene" uid="uid://c5y3cujcwjg04" path="res://assets/prefabs/blocks/pillar-end.tscn" id="7_8uk08"]
+[ext_resource type="PackedScene" uid="uid://d3151e1ichxin" path="res://assets/prefabs/blocks/pillar.tscn" id="8_g2rj1"]
+[ext_resource type="PackedScene" uid="uid://b4uib1ggwd7vg" path="res://assets/prefabs/cards.tscn" id="9_7x75s"]
+[ext_resource type="PackedScene" uid="uid://5hmiuh15ioqw" path="res://assets/prefabs/screen-changer.tscn" id="10_sl8gs"]
+
+[node name="root" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_r4iol")]
+position = Vector2(-284, -209)
+num_cloud = 1
+num_wave = 1
+num_plant = 0
+num_fire = 0
+num_sling = 0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("3_5ls1b")]
+position = Vector2(-8, -336)
+rotation = 1.5708
+
+[node name="platform" type="Node2D" parent="."]
+
+[node name="StaticBody2D2" parent="platform" instance=ExtResource("5_tugxq")]
+position = Vector2(-275, -173)
+scale = Vector2(1, 4.745)
+
+[node name="StaticBody2D3" parent="platform" instance=ExtResource("4_bs7pq")]
+position = Vector2(-189, 113)
+
+[node name="StaticBody2D4" parent="platform" instance=ExtResource("5_tugxq")]
+position = Vector2(-266, 113)
+scale = Vector2(1, 4.14)
+
+[node name="StaticBody2D5" parent="platform" instance=ExtResource("5_tugxq")]
+position = Vector2(-189, 190)
+rotation = 3.14159
+scale = Vector2(1, 4.14)
+
+[node name="StaticBody2D6" parent="platform" instance=ExtResource("4_bs7pq")]
+position = Vector2(-189, 7)
+rotation = 3.14159
+
+[node name="StaticBody2D7" parent="platform" instance=ExtResource("5_tugxq")]
+position = Vector2(-189, -83)
+rotation = 3.14159
+scale = Vector2(1, 5)
+
+[node name="StaticBody2D8" parent="platform" instance=ExtResource("5_tugxq")]
+position = Vector2(-276, 7)
+rotation = -1.5708
+scale = Vector2(1, 4.79)
+
+[node name="StaticBody2D9" parent="platform" instance=ExtResource("5_tugxq")]
+position = Vector2(216, -7)
+rotation = 0.0
+scale = Vector2(1, 21.9)
+
+[node name="StaticBody2D10" parent="platform" instance=ExtResource("5_pcc0p")]
+position = Vector2(-159, 7)
+rotation = 3.14159
+
+[node name="StaticBody2D11" parent="platform" instance=ExtResource("5_pcc0p")]
+position = Vector2(-159, -23)
+rotation = 3.14159
+
+[node name="StaticBody2D12" parent="platform" instance=ExtResource("5_pcc0p")]
+position = Vector2(-159, -53)
+rotation = 3.14159
+
+[node name="StaticBody2D13" parent="platform" instance=ExtResource("5_pcc0p")]
+position = Vector2(-159, -83)
+rotation = 3.14159
+
+[node name="StaticBody2D14" parent="platform" instance=ExtResource("5_pcc0p")]
+position = Vector2(-159, -113)
+rotation = 3.14159
+
+[node name="StaticBody2D15" parent="platform" instance=ExtResource("5_pcc0p")]
+position = Vector2(-159, -143)
+rotation = 3.14159
+
+[node name="StaticBody2D16" parent="platform" instance=ExtResource("5_pcc0p")]
+position = Vector2(-159, -203)
+
+[node name="StaticBody2D19" parent="platform" instance=ExtResource("5_pcc0p")]
+position = Vector2(-129, -203)
+
+[node name="StaticBody2D20" parent="platform" instance=ExtResource("5_pcc0p")]
+position = Vector2(-99, -203)
+
+[node name="StaticBody2D" parent="platform" instance=ExtResource("5_tugxq")]
+position = Vector2(-189, -173)
+
+[node name="StaticBody2D17" parent="platform" instance=ExtResource("8_g2rj1")]
+position = Vector2(-144, -173)
+scale = Vector2(1, 2)
+
+[node name="StaticBody2D18" parent="platform" instance=ExtResource("7_8uk08")]
+position = Vector2(-99, -173)
+
+[node name="StaticBody2D21" parent="platform" instance=ExtResource("6_o6w1q")]
+position = Vector2(-189, -173)
+rotation = 3.14159
+
+[node name="cards" parent="." instance=ExtResource("9_7x75s")]
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("3_5ls1b")]
+position = Vector2(-323, -264)
+scale = Vector2(1, 8.495)
+
+[node name="Area2D" parent="." instance=ExtResource("10_sl8gs")]
+position = Vector2(-323, 61)
+scale = Vector2(1, 6.93)
+next = "res://scenes/screen3-3.tscn"
