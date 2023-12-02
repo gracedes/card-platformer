@@ -18,14 +18,13 @@ func _process(delta):
 		for fb in fbs:
 			if _area.overlaps_area(fb):
 				burning = true
+		
+		var cts = get_tree().get_nodes_in_group("crate")
+		for ct in cts:
+			if _area.overlaps_area(ct._area) and ct.burn_count >= burn_time / 4:
+				burning = true
 	elif burning and burn_count < burn_time:
 		ani.play("burning")
 		burn_count += delta
 	else:
 		queue_free()
-	
-	var cts = get_tree().get_nodes_in_group("crate")
-	for ct in cts:
-		if _area.overlaps_area(ct._area) and ct.burn_count >= burn_time / 2:
-			burning = true
-			
