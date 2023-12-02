@@ -36,4 +36,4 @@ func _process(delta):
 		p.num_fire += 1
 		softlockTimer = 0.0
 	if startupDone:
-		timeSinceIgnite += 1
+		timeSinceIgnite += delta

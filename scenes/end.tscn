@@ -1,6 +1,7 @@
-[gd_scene load_steps=21 format=3 uid="uid://c10evkdtx7tq7"]
+[gd_scene load_steps=22 format=3 uid="uid://c10evkdtx7tq7"]
 
 [ext_resource type="PackedScene" uid="uid://dp0ffe2ki7eoj" path="res://assets/prefabs/character_body_2d.tscn" id="1_t4jo5"]
+[ext_resource type="Script" path="res://assets/scripts/endCam.gd" id="2_1okvk"]
 [ext_resource type="PackedScene" uid="uid://sadk1wouahhk" path="res://assets/prefabs/barrier.tscn" id="2_6bjhh"]
 [ext_resource type="PackedScene" uid="uid://bpru5ee2dc6ha" path="res://assets/prefabs/blocks/wall.tscn" id="3_1kgk6"]
 [ext_resource type="Texture2D" uid="uid://6kavmvd5vi4b" path="res://assets/sprites/final-cutscene/pedestal_0011_Layer-5.png" id="5_8iute"]
@@ -84,6 +85,7 @@ num_fire = 1
 num_sling = 0
 
 [node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("2_1okvk")
 
 [node name="StaticBody2D2" parent="." instance=ExtResource("2_6bjhh")]
 position = Vector2(-8, -336)
@@ -121,6 +123,7 @@ shape = SubResource("RectangleShape2D_p2wji")
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="Node2D"]
 position = Vector2(0, 2.5)
+emitting = false
 amount = 40
 lifetime = 40.0
 texture = ExtResource("18_w2mhq")
@@ -129,5 +132,5 @@ emission_sphere_radius = 16.0
 direction = Vector2(0, -1)
 spread = 20.0
 gravity = Vector2(0, 0)
-initial_velocity_min = 15.0
-initial_velocity_max = 20.0
+initial_velocity_min = 20.0
+initial_velocity_max = 30.0
