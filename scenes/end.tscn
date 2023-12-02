@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://c10evkdtx7tq7"]
+[gd_scene load_steps=23 format=3 uid="uid://c10evkdtx7tq7"]
 
 [ext_resource type="PackedScene" uid="uid://dp0ffe2ki7eoj" path="res://assets/prefabs/character_body_2d.tscn" id="1_t4jo5"]
 [ext_resource type="Script" path="res://assets/scripts/endCam.gd" id="2_1okvk"]
@@ -19,6 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://df53m6ffoavla" path="res://assets/sprites/final-cutscene/pedestal_0001_Layer-3-copy-2.png" id="15_pgnuj"]
 [ext_resource type="Texture2D" uid="uid://crafbkip6wuce" path="res://assets/sprites/final-cutscene/pedestal_0000_Layer-3-copy-3.png" id="16_ds85y"]
 [ext_resource type="Texture2D" uid="uid://cxvtd6ofj86f6" path="res://assets/sprites/final-cutscene/fire-particle.png" id="18_w2mhq"]
+[ext_resource type="Texture2D" uid="uid://b836681riqb5c" path="res://assets/sprites/final-cutscene/theEnd.png" id="20_ak0b0"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lij0r"]
 animations = [{
@@ -134,3 +135,7 @@ spread = 20.0
 gravity = Vector2(0, 0)
 initial_velocity_min = 20.0
 initial_velocity_max = 30.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -412)
+texture = ExtResource("20_ak0b0")
