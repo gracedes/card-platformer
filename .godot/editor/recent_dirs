@@ -1,5 +1,9 @@
-res://assets/sprites/final-cutscene
+C:/Users/kdesr/OneDrive/Documents/GitHub/card-platformer/builds/linux-build
+C:/Users/kdesr/OneDrive/Documents/GitHub/card-platformer/builds/html-build
+C:/Users/kdesr/OneDrive/Documents/GitHub/card-platformer/builds/windows-build
 res://assets/branding
+C:/Users/kdesr/OneDrive/Documents/GitHub/card-platformer/builds
+res://assets/sprites/final-cutscene
 res://assets/sprites/blocks
 res://assets/sprites/ability-animations/plant-ani
 res://assets/sprites/ability-animations/wave-ani
@@ -8,7 +12,6 @@ res://assets/scripts
 res://assets/prefabs/blocks
 res://assets/sprites/cards/icons
 res://assets/sprites/ability-animations/sling-ani
-C:/Users/kdesr/Documents/GitHub/card-platformer/assets/scripts
 res://assets/sprites/fire
 res://assets
 res://assets/sprites
