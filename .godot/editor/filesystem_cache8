@@ -1,9 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
 ::res://::1701507768
 ::res://assets/::1701392002
-::res://assets/branding/::1701501263
-logo.png::CompressedTexture2D::291692569155944140::1701501263::1701501263::1::::<><>::
-logoGBG.png::CompressedTexture2D::8059045930062642544::1701501263::1701501263::1::::<><>::
+::res://assets/branding/::1701511466
+logo.png::CompressedTexture2D::291692569155944140::1701511466::1701511469::1::::<><>::
+logoGBG.png::CompressedTexture2D::8059045930062642544::1701511466::1701511469::1::::<><>::
 start_0000_Layer-7.png::CompressedTexture2D::1339242842332590706::1701501263::1701501263::1::::<><>::
 start_0001_Layer-3-copy.png::CompressedTexture2D::1650881923419704029::1701501263::1701501263::1::::<><>::
 start_0002_Layer-3.png::CompressedTexture2D::7686771396385302877::1701501263::1701501263::1::::<><>::
@@ -107,7 +107,7 @@ fire-icon.png::CompressedTexture2D::2792579249964845299::1699511358::1698972592:
 plant-icon.png::CompressedTexture2D::415509218936735770::1699511358::1698972592::1::::<><>::
 slingshot-icon.png::CompressedTexture2D::5090529405751127681::1699511358::1698972592::1::::<><>::
 wave-icon.png::CompressedTexture2D::8067874323712025817::1699511358::1698972592::1::::<><>::
-::res://assets/sprites/final-cutscene/::1701511055
+::res://assets/sprites/final-cutscene/::1701511466
 fire-particle.png::CompressedTexture2D::6431697334232133245::1701507748::1701507768::1::::<><>::
 pedestal_0000_Layer-3-copy-3.png::CompressedTexture2D::5966357618306272280::1701505520::1701505526::1::::<><>::
 pedestal_0001_Layer-3-copy-2.png::CompressedTexture2D::7573860743409365130::1701505520::1701505526::1::::<><>::
@@ -121,7 +121,7 @@ pedestal_0008_Layer-4-copy-2.png::CompressedTexture2D::1921478098580727595::1701
 pedestal_0009_Layer-4-copy.png::CompressedTexture2D::4026292184171780538::1701505520::1701505526::1::::<><>::
 pedestal_0010_Layer-4.png::CompressedTexture2D::7411115493492691061::1701505520::1701505526::1::::<><>::
 pedestal_0011_Layer-5.png::CompressedTexture2D::2196536094889930915::1701505520::1701505526::1::::<><>::
-theEnd.png::CompressedTexture2D::4762394461467849122::1701511055::1701511058::1::::<><>::
+theEnd.png::CompressedTexture2D::4762394461467849122::1701511466::1701511469::1::::<><>::
 ::res://assets/sprites/fire/::1699511358
 fireball.png::CompressedTexture2D::3182250051988418526::1699511358::1699511358::1::::<><>::
 flame1.png::CompressedTexture2D::6950218052422553627::1699511358::1699511358::1::::<><>::
@@ -145,9 +145,9 @@ protag-outline-run-3.png::CompressedTexture2D::6777608103827611991::1697673527::
 ::res://assets/sprites/skeledog/::1699511358
 skeledog2.png::CompressedTexture2D::7762162313883802244::1699511358::1699511358::1::::<><>::
 skeledog.png::CompressedTexture2D::4363226518176680417::1699511358::1699511358::1::::<><>::
-::res://scenes/::1701510523
-end.tscn::PackedScene::6649641646232810908::1701510523::0::1::::<><>::uid://dp0ffe2ki7eoj::::res://assets/prefabs/character_body_2d.tscn<>res://assets/scripts/endCam.gd<>uid://sadk1wouahhk::::res://assets/prefabs/barrier.tscn<>uid://bpru5ee2dc6ha::::res://assets/prefabs/blocks/wall.tscn<>uid://6kavmvd5vi4b::::res://assets/sprites/final-cutscene/pedestal_0011_Layer-5.png<>res://assets/scripts/altar.gd<>uid://b4uib1ggwd7vg::::res://assets/prefabs/cards.tscn<>uid://ddt88v0nieypx::::res://assets/sprites/final-cutscene/pedestal_0010_Layer-4.png<>uid://bxmmpdj7ewk4i::::res://assets/sprites/final-cutscene/pedestal_0009_Layer-4-copy.png<>uid://2m1p04po8nsl::::res://assets/sprites/final-cutscene/pedestal_0008_Layer-4-copy-2.png<>uid://bwqsm7psiqt06::::res://assets/sprites/final-cutscene/pedestal_0007_Layer-4-copy-3.png<>uid://ctqvn6fsygbxn::::res://assets/sprites/final-cutscene/pedestal_0006_Layer-4-copy-4.png<>uid://c36e73m16edrn::::res://assets/sprites/final-cutscene/pedestal_0005_Layer-4-copy-5.png<>uid://dxfsm83imqy4b::::res://assets/sprites/final-cutscene/pedestal_0004_Layer-4-copy-6.png<>uid://bhcfy72xph5dq::::res://assets/sprites/final-cutscene/pedestal_0003_Layer-3.png<>uid://dqoad7da1vc60::::res://assets/sprites/final-cutscene/pedestal_0002_Layer-3-copy.png<>uid://df53m6ffoavla::::res://assets/sprites/final-cutscene/pedestal_0001_Layer-3-copy-2.png<>uid://crafbkip6wuce::::res://assets/sprites/final-cutscene/pedestal_0000_Layer-3-copy-3.png<>uid://cxvtd6ofj86f6::::res://assets/sprites/final-cutscene/fire-particle.png
-screen4-1.tscn::PackedScene::7135843594191216859::1701510255::0::1::::<><>::uid://dp0ffe2ki7eoj::::res://assets/prefabs/character_body_2d.tscn<>uid://sadk1wouahhk::::res://assets/prefabs/barrier.tscn<>uid://bpru5ee2dc6ha::::res://assets/prefabs/blocks/wall.tscn<>uid://bx7r3asko0vwd::::res://assets/prefabs/blocks/corner.tscn<>uid://b4uib1ggwd7vg::::res://assets/prefabs/cards.tscn<>uid://1s7tuval67dj::::res://assets/prefabs/blocks/inner-corner.tscn<>uid://5hmiuh15ioqw::::res://assets/prefabs/screen-changer.tscn
+::res://scenes/::1701511108
+end.tscn::PackedScene::6649641646232810908::1701511108::0::1::::<><>::uid://dp0ffe2ki7eoj::::res://assets/prefabs/character_body_2d.tscn<>res://assets/scripts/endCam.gd<>uid://sadk1wouahhk::::res://assets/prefabs/barrier.tscn<>uid://bpru5ee2dc6ha::::res://assets/prefabs/blocks/wall.tscn<>uid://6kavmvd5vi4b::::res://assets/sprites/final-cutscene/pedestal_0011_Layer-5.png<>res://assets/scripts/altar.gd<>uid://b4uib1ggwd7vg::::res://assets/prefabs/cards.tscn<>uid://ddt88v0nieypx::::res://assets/sprites/final-cutscene/pedestal_0010_Layer-4.png<>uid://bxmmpdj7ewk4i::::res://assets/sprites/final-cutscene/pedestal_0009_Layer-4-copy.png<>uid://2m1p04po8nsl::::res://assets/sprites/final-cutscene/pedestal_0008_Layer-4-copy-2.png<>uid://bwqsm7psiqt06::::res://assets/sprites/final-cutscene/pedestal_0007_Layer-4-copy-3.png<>uid://ctqvn6fsygbxn::::res://assets/sprites/final-cutscene/pedestal_0006_Layer-4-copy-4.png<>uid://c36e73m16edrn::::res://assets/sprites/final-cutscene/pedestal_0005_Layer-4-copy-5.png<>uid://dxfsm83imqy4b::::res://assets/sprites/final-cutscene/pedestal_0004_Layer-4-copy-6.png<>uid://bhcfy72xph5dq::::res://assets/sprites/final-cutscene/pedestal_0003_Layer-3.png<>uid://dqoad7da1vc60::::res://assets/sprites/final-cutscene/pedestal_0002_Layer-3-copy.png<>uid://df53m6ffoavla::::res://assets/sprites/final-cutscene/pedestal_0001_Layer-3-copy-2.png<>uid://crafbkip6wuce::::res://assets/sprites/final-cutscene/pedestal_0000_Layer-3-copy-3.png<>uid://cxvtd6ofj86f6::::res://assets/sprites/final-cutscene/fire-particle.png<>uid://b836681riqb5c::::res://assets/sprites/final-cutscene/theEnd.png
+screen4-1.tscn::PackedScene::7135843594191216859::1701511108::0::1::::<><>::uid://dp0ffe2ki7eoj::::res://assets/prefabs/character_body_2d.tscn<>uid://sadk1wouahhk::::res://assets/prefabs/barrier.tscn<>uid://bpru5ee2dc6ha::::res://assets/prefabs/blocks/wall.tscn<>uid://bx7r3asko0vwd::::res://assets/prefabs/blocks/corner.tscn<>uid://b4uib1ggwd7vg::::res://assets/prefabs/cards.tscn<>uid://1s7tuval67dj::::res://assets/prefabs/blocks/inner-corner.tscn<>uid://5hmiuh15ioqw::::res://assets/prefabs/screen-changer.tscn
 screen4-2.tscn::PackedScene::5074508793540342320::1701501263::0::1::::<><>::uid://dp0ffe2ki7eoj
 screen5-1.tscn::PackedScene::6838705274678555211::1701501263::0::1::::<><>::uid://dp0ffe2ki7eoj
 screen5-2.tscn::PackedScene::5707465193666549832::1701501263::0::1::::<><>::uid://dp0ffe2ki7eoj
@@ -160,4 +160,4 @@ screen7-2.tscn::PackedScene::5774549202288133750::1701407045::0::1::::<><>::uid:
 screen7-3.tscn::PackedScene::4388914652709684991::1701407045::0::1::::<><>::uid://dp0ffe2ki7eoj
 screen7-4.tscn::PackedScene::1956241894263456861::1701508809::0::1::::<><>::uid://dp0ffe2ki7eoj::::res://assets/prefabs/character_body_2d.tscn<>uid://bpru5ee2dc6ha::::res://assets/prefabs/blocks/wall.tscn<>uid://b7huxev3vc2qx::::res://assets/prefabs/blocks/full-square.tscn<>uid://b4rfphb3mp1f6::::res://assets/prefabs/blocks/spikes.tscn<>uid://b4uib1ggwd7vg::::res://assets/prefabs/cards.tscn<>uid://bx7r3asko0vwd::::res://assets/prefabs/blocks/corner.tscn<>uid://d3151e1ichxin::::res://assets/prefabs/blocks/pillar.tscn<>uid://1s7tuval67dj::::res://assets/prefabs/blocks/inner-corner.tscn<>uid://c5y3cujcwjg04::::res://assets/prefabs/blocks/pillar-end.tscn<>uid://dr50o8h1js5ot::::res://assets/prefabs/blocks/crate.tscn<>uid://sadk1wouahhk::::res://assets/prefabs/barrier.tscn<>uid://5hmiuh15ioqw::::res://assets/prefabs/screen-changer.tscn
 test.tscn::PackedScene::7893435255593671328::1701392003::0::1::::<><>::uid://dp0ffe2ki7eoj
-title.tscn::PackedScene::3900206220234814533::1701510255::0::1::::<><>::uid://du8nyok1t65sp::::res://assets/branding/start_0004_Layer-8.png<>res://assets/scripts/startScript.gd<>uid://cu6xvrxfsof8o::::res://assets/branding/start_0003_Layer-9.png<>uid://tc0es3wypgqc::::res://assets/branding/start_0000_Layer-7.png<>uid://dhrsaceumht2d::::res://assets/branding/start_0002_Layer-3.png<>uid://xrx1wns2sain::::res://assets/branding/start_0001_Layer-3-copy.png<>uid://dm24krh8vbe6k::::res://assets/branding/logoGBG.png
+title.tscn::PackedScene::3900206220234814533::1701511108::0::1::::<><>::uid://du8nyok1t65sp::::res://assets/branding/start_0004_Layer-8.png<>res://assets/scripts/startScript.gd<>uid://cu6xvrxfsof8o::::res://assets/branding/start_0003_Layer-9.png<>uid://tc0es3wypgqc::::res://assets/branding/start_0000_Layer-7.png<>uid://dhrsaceumht2d::::res://assets/branding/start_0002_Layer-3.png<>uid://xrx1wns2sain::::res://assets/branding/start_0001_Layer-3-copy.png<>uid://dm24krh8vbe6k::::res://assets/branding/logoGBG.png
