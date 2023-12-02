@@ -165,6 +165,7 @@ position = Vector2(155, 70)
 [node name="Area2D" parent="." instance=ExtResource("11_0cnul")]
 position = Vector2(324, 77)
 scale = Vector2(1, 4.85)
+next = "res://scenes/end.tscn"
 
 [node name="StaticBody2D2" parent="." instance=ExtResource("10_qb4pp")]
 position = Vector2(-8, -336)
