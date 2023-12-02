@@ -7,11 +7,13 @@ extends Node2D
 @onready var p = get_node("../CharacterBody2D")
 @onready var softlockTimer = 0.0
 @onready var timeSinceIgnite = 0.0
+@onready var _particles = $CPUParticles2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	_ani.frame = 0
 	_ani.play("default")
+	_particles.emitting = false
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -27,6 +29,7 @@ func _process(delta):
 		startupDone = true
 		_ani.frame = 0
 		_ani.play("burn2")
+		_particles.emitting = true
 	if not startupDone and p.num_fire == 0:
 		softlockTimer += delta
 	if softlockTimer > 3.0:

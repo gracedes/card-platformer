@@ -2,5 +2,6 @@ res://scenes/screen4-1.tscn
 res://assets/scripts/Area2D.gd
 res://scenes/title.tscn
 res://scenes/end.tscn
-res://assets/scripts/altar.gd
 res://assets/prefabs/blocks/crate.tscn
+res://assets/scripts/altar.gd
+res://assets/scripts/crate-script.gd
