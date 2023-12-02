@@ -131,7 +131,7 @@ position = Vector2(167, -187)
 rotation = -1.5708
 
 [node name="StaticBody2D26" parent="platform" instance=ExtResource("8_p3fyi")]
-position = Vector2(198, -187)
+position = Vector2(197, -187)
 rotation = -1.5708
 
 [node name="StaticBody2D27" parent="platform" instance=ExtResource("8_p3fyi")]

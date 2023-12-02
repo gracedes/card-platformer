@@ -57,6 +57,7 @@ size = Vector2(58, 24)
 position = Vector2(0, 170.555)
 scale = Vector2(2, 2)
 script = ExtResource("1_wigkq")
+next = "res://scenes/screen1-1.tscn"
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Node2D"]
 sprite_frames = SubResource("SpriteFrames_radhb")

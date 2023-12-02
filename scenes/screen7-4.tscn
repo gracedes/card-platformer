@@ -40,7 +40,7 @@ position = Vector2(-80, -30)
 position = Vector2(-80, 0)
 
 [node name="StaticBody2D27" parent="platform" instance=ExtResource("3_s201o")]
-position = Vector2(-1, 50)
+position = Vector2(0, 50)
 
 [node name="StaticBody2D3" parent="platform" instance=ExtResource("2_mctwe")]
 position = Vector2(0, -80)
@@ -98,16 +98,16 @@ position = Vector2(-243, -142)
 rotation = -1.5708
 
 [node name="StaticBody2D12" parent="platform" instance=ExtResource("3_s201o")]
-position = Vector2(-153, -171)
+position = Vector2(-153, -172)
 
 [node name="StaticBody2D13" parent="platform" instance=ExtResource("3_s201o")]
-position = Vector2(-183, -171)
+position = Vector2(-183, -172)
 
 [node name="StaticBody2D14" parent="platform" instance=ExtResource("3_s201o")]
-position = Vector2(-213, -171)
+position = Vector2(-213, -172)
 
 [node name="StaticBody2D15" parent="platform" instance=ExtResource("3_s201o")]
-position = Vector2(-243, -171)
+position = Vector2(-243, -172)
 
 [node name="StaticBody2D29" parent="platform" instance=ExtResource("3_s201o")]
 position = Vector2(-243, -112)
