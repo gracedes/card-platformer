@@ -79,6 +79,8 @@ func check_abilities(delta):
 		fire_ability(delta)
 	if mid_sling or (Input.is_action_just_pressed("ability5") and num_sling > 0):
 		sling_ability(delta)
+	if Input.is_action_just_pressed("respawn"):
+		get_tree().reload_current_scene()
 
 func cloud_ability(delta):
 	num_cloud -= 1
