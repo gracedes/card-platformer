@@ -67,9 +67,10 @@ script = ExtResource("2_167w6")
 
 [node name="outline" type="AnimatedSprite2D" parent="card3"]
 sprite_frames = SubResource("SpriteFrames_nkth3")
-animation = &"three"
+animation = &"zero"
 
 [node name="icon" type="Sprite2D" parent="card3"]
+visible = false
 texture = ExtResource("7_rfngi")
 
 [node name="card4" type="Node2D" parent="."]
@@ -79,9 +80,10 @@ script = ExtResource("8_htwp5")
 
 [node name="outline" type="AnimatedSprite2D" parent="card4"]
 sprite_frames = SubResource("SpriteFrames_nkth3")
-animation = &"three"
+animation = &"zero"
 
 [node name="icon" type="Sprite2D" parent="card4"]
+visible = false
 texture = ExtResource("9_8x2ma")
 
 [node name="card5" type="Node2D" parent="."]
@@ -91,9 +93,10 @@ script = ExtResource("10_77u0a")
 
 [node name="outline" type="AnimatedSprite2D" parent="card5"]
 sprite_frames = SubResource("SpriteFrames_nkth3")
-animation = &"three"
+animation = &"zero"
 
 [node name="icon" type="Sprite2D" parent="card5"]
+visible = false
 texture = ExtResource("11_7o3qv")
 
 [node name="card2" type="Node2D" parent="."]
@@ -103,9 +106,10 @@ script = ExtResource("12_1arig")
 
 [node name="outline" type="AnimatedSprite2D" parent="card2"]
 sprite_frames = SubResource("SpriteFrames_nkth3")
-animation = &"three"
+animation = &"zero"
 
 [node name="icon" type="Sprite2D" parent="card2"]
+visible = false
 texture = ExtResource("13_ra6d4")
 
 [node name="card1" type="Node2D" parent="."]
@@ -115,7 +119,8 @@ script = ExtResource("14_80453")
 
 [node name="outline" type="AnimatedSprite2D" parent="card1"]
 sprite_frames = SubResource("SpriteFrames_nkth3")
-animation = &"three"
+animation = &"zero"
 
 [node name="icon" type="Sprite2D" parent="card1"]
+visible = false
 texture = ExtResource("15_qbrx8")
