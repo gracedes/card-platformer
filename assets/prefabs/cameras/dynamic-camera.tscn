@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://jkdf814pfnve"]
+
+[ext_resource type="Script" path="res://assets/scripts/dynamic-camera.gd" id="1_0p24u"]
+[ext_resource type="PackedScene" uid="uid://nejh8rs37ovv" path="res://assets/prefabs/cameras/static-camera.tscn" id="2_t1bi6"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_0p24u")
+
+[node name="Camera2D" parent="." instance=ExtResource("2_t1bi6")]

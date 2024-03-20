@@ -1,11 +1,5 @@
-res://assets/prefabs/character_body_2d.tscn
+res://scenes/trials-testing.tscn
 res://assets/scripts/Area2D.gd
-res://scenes/title.tscn
-res://scenes/screen5-1.tscn
-res://scenes/screen5-2.tscn
-res://scenes/screen6-1.tscn
-res://scenes/screen6-2.tscn
-res://scenes/screen6-3.tscn
-res://scenes/screen6-4.tscn
-res://assets/prefabs/blocks/spikes.tscn
-res://scenes/screen7-4.tscn
+res://assets/prefabs/cameras/dynamic-camera.tscn
+res://assets/prefabs/cameras/dynamic-camera.gd
+res://assets/scripts/dynamic-camera.gd
