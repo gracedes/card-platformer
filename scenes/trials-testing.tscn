@@ -8,6 +8,12 @@
 
 [node name="root" type="Node2D"]
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="cards" parent="CanvasLayer" instance=ExtResource("6_pa8g5")]
+position = Vector2(315, 348)
+script = null
+
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_5tjp7")]
 position = Vector2(-282, 39)
 num_cloud = 10
@@ -17,9 +23,6 @@ num_fire = 10
 num_sling = 10
 
 [node name="Camera2D" parent="." instance=ExtResource("2_fokrl")]
-
-[node name="cards" parent="Camera2D" instance=ExtResource("6_pa8g5")]
-script = null
 
 [node name="StaticBody2D2" parent="." instance=ExtResource("2_cqjg1")]
 position = Vector2(-8, -336)
