@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://chcvtxoh2l5tp"]
+
+[ext_resource type="Script" path="res://assets/scripts/dynamic-camera.gd" id="1_adeeu"]
+
+[node name="Camera2D" type="Camera2D" groups=["camera"]]
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
+script = ExtResource("1_adeeu")

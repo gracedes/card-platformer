@@ -2,7 +2,7 @@ extends Node2D
 
 @onready var _animated_sprite = $outline
 @onready var _2d_sprite = $icon
-@onready var p = get_node("../../CharacterBody2D")
+@onready var p = get_node("../../../CharacterBody2D")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

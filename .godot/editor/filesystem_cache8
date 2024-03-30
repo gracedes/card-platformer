@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1710949020
+::res://::1711813757
 ::res://addons/::1698354855
 ::res://addons/discord-sdk-gd/::1698355064
 Debug.svg::CompressedTexture2D::1414570589633831756::1698355064::1698355064::1::::<><>::
@@ -50,11 +50,10 @@ pillar.tscn::PackedScene::9180091685599058769::1700260011::0::1::::<><>::uid://v
 pixel.tscn::PackedScene::4250089950521580602::1699728162::0::1::::<><>::uid://dlbr4k6oc1d4e
 spikes.tscn::PackedScene::4457322313384565289::1709410099::0::1::::<><>::res://assets/scripts/spikescript.gd<>uid://qqshbppk8cnu
 wall.tscn::PackedScene::3475615891258577546::1700260011::0::1::::<><>::uid://bxn3qru8nvii3
-::res://assets/prefabs/cameras/::1710949069
-dynamic-camera.tscn::PackedScene::3985349931557704831::1710949261::0::1::::<><>::res://assets/prefabs/cameras/dynamic-camera.gd<>uid://nejh8rs37ovv::::res://assets/prefabs/cameras/static-camera.tscn
-dynamic-camera.gd::GDScript::-1::1710949238::0::1::::<>Node2D<>::
+::res://assets/prefabs/cameras/::1710951325
+dynamic-camera.tscn::PackedScene::652536225004067258::1710951325::0::1::::<><>::res://assets/scripts/dynamic-camera.gd<>uid://nejh8rs37ovv::::res://assets/prefabs/cameras/static-camera.tscn
 static-camera.tscn::PackedScene::921273192191652055::1710948991::0::1::::<><>::
-::res://assets/scripts/::1710948929
+::res://assets/scripts/::1710951355
 altar.gd::GDScript::-1::1701513357::0::1::::<>Node2D<>::
 Area2D.gd::GDScript::-1::1710948929::0::1::::<>Area2D<>::
 card-script1.gd::GDScript::-1::1699120666::0::1::::<>Node2D<>::
@@ -63,6 +62,7 @@ card-script3.gd::GDScript::-1::1699120666::0::1::::<>Node2D<>::
 card-script4.gd::GDScript::-1::1699644137::0::1::::<>Node2D<>::
 card-script5.gd::GDScript::-1::1699643937::0::1::::<>Node2D<>::
 crate-script.gd::GDScript::-1::1701549279::0::1::::<>StaticBody2D<>::
+dynamic-camera.gd::GDScript::-1::1710951355::0::1::::<>Node2D<>::
 endCam.gd::GDScript::-1::1701513962::0::1::::<>Camera2D<>::
 fireball-script.gd::GDScript::-1::1700260389::0::1::::<>Node2D<>::
 plant-ani.gd::GDScript::-1::1700799167::0::1::::<>AnimatedSprite2D<>::
@@ -178,7 +178,7 @@ index.icon.png::CompressedTexture2D::3204251056414366441::1704493802::1704493802
 index.png::CompressedTexture2D::3398631197337851192::1704493802::1704493802::1::::<><>::
 ::res://builds/linux-build/::1709410099
 ::res://builds/windows-build/::1709410099
-::res://scenes/::1710948943
+::res://scenes/::1710951355
 end.tscn::PackedScene::6649641646232810908::1701515370::0::1::::<><>::uid://dp0ffe2ki7eoj
 screen1-1.tscn::PackedScene::6430731753041012736::1701524300::0::1::::<><>::uid://dp0ffe2ki7eoj
 screen1-2.tscn::PackedScene::7702919998632931734::1701524300::0::1::::<><>::uid://dp0ffe2ki7eoj
@@ -203,4 +203,4 @@ screen7-3.tscn::PackedScene::4388914652709684991::1701454879::0::1::::<><>::uid:
 screen7-4.tscn::PackedScene::1956241894263456861::1701524300::0::1::::<><>::uid://dp0ffe2ki7eoj
 test.tscn::PackedScene::7893435255593671328::1700881556::0::1::::<><>::uid://dp0ffe2ki7eoj
 title.tscn::PackedScene::3900206220234814533::1706465766::0::1::::<><>::uid://du8nyok1t65sp
-trials-testing.tscn::PackedScene::2556202047951852495::1710949243::0::1::::<><>::uid://dp0ffe2ki7eoj::::res://assets/prefabs/character_body_2d.tscn<>uid://sadk1wouahhk::::res://assets/prefabs/barrier.tscn<>uid://bpru5ee2dc6ha::::res://assets/prefabs/blocks/wall.tscn<>uid://b4uib1ggwd7vg::::res://assets/prefabs/cards.tscn<>uid://5hmiuh15ioqw::::res://assets/prefabs/screen-changer.tscn
+trials-testing.tscn::PackedScene::2556202047951852495::1710951355::0::1::::<><>::uid://dp0ffe2ki7eoj::::res://assets/prefabs/character_body_2d.tscn<>uid://sadk1wouahhk::::res://assets/prefabs/barrier.tscn<>uid://jkdf814pfnve::::res://assets/prefabs/cameras/dynamic-camera.tscn<>uid://bpru5ee2dc6ha::::res://assets/prefabs/blocks/wall.tscn<>uid://b4uib1ggwd7vg::::res://assets/prefabs/cards.tscn<>uid://5hmiuh15ioqw::::res://assets/prefabs/screen-changer.tscn
